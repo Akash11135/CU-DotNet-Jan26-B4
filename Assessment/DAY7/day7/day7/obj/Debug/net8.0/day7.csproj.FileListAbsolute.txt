@@ -1,0 +1,15 @@
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\bin\Debug\net8.0\day7.exe
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\bin\Debug\net8.0\day7.deps.json
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\bin\Debug\net8.0\day7.runtimeconfig.json
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\bin\Debug\net8.0\day7.dll
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\bin\Debug\net8.0\day7.pdb
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.GeneratedMSBuildEditorConfig.editorconfig
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.AssemblyInfoInputs.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.AssemblyInfo.cs
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.csproj.CoreCompileInputs.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.sourcelink.json
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.dll
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\refint\day7.dll
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.pdb
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\day7.genruntimeconfig.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY7\day7\day7\obj\Debug\net8.0\ref\day7.dll
