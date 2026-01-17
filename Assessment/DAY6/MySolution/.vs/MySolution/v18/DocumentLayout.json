@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\DAY6\\MySolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA3A0AAA-6622-4290-9C59-7C62DC8DFF65}|week2\\MyMath\\MyMath.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessment\\day6\\mysolution\\week2\\mymath\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA3A0AAA-6622-4290-9C59-7C62DC8DFF65}|week2\\MyMath\\MyMath.csproj|solutionrelative:week2\\mymath\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\DAY6\\MySolution\\week2\\GreetingLibrary\\GreetingHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,11 +23,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\DAY6\\MySolution\\week2\\MyMath\\Program.cs",
+              "RelativeDocumentMoniker": "week2\\MyMath\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\DAY6\\MySolution\\week2\\MyMath\\Program.cs",
+              "RelativeToolTip": "week2\\MyMath\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T04:31:03.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\DAY6\\MySolution\\week2\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\DAY6\\MySolution\\week2\\ConsoleApp1\\Program.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GreetingHelper.cs",
               "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\DAY6\\MySolution\\week2\\GreetingLibrary\\GreetingHelper.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\DAY6\\MySolution\\week2\\GreetingLibrary\\GreetingHelper.cs",
@@ -46,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\DAY6\\MySolution\\week2\\GreetingLibrary\\Class1.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\DAY6\\MySolution\\week2\\GreetingLibrary\\Class1.cs",

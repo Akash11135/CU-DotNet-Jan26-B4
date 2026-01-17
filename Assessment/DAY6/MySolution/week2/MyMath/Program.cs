@@ -12,8 +12,12 @@ namespace UseLiberaryDemo
     {
         static void Main(string[] args)
         {
-            MyMathFunctions math = new MyMathFunctions();
-            Console.WriteLine(math.Add(5, 10)) ;
+            string cityNames = "Delhi,Mumbai, ,Bangalore, ,Chennai, ,Hyderabad";
+
+            string[] city = cityNames.Split(',');
+            for (int i = 0; i < city.length; i++)
+            {
+                Console.WriteLine(city[i]);
+            }
         }
-    }
 }

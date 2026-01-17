@@ -5,3 +5,7 @@ D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY6\MySolution\week2\MyMat
 D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY6\MySolution\week2\MyMath\obj\Debug\MyMath.csproj.CoreCompileInputs.cache
 D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY6\MySolution\week2\MyMath\obj\Debug\MyMath.exe
 D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\DAY6\MySolution\week2\MyMath\obj\Debug\MyMath.pdb
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY6\MySolution\week2\MyMath\obj\Debug\MyMath.csproj.AssemblyReference.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY6\MySolution\week2\MyMath\obj\Debug\MyMath.csproj.CoreCompileInputs.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY6\MySolution\week2\MyMath\obj\Debug\MyMath.exe
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY6\MySolution\week2\MyMath\obj\Debug\MyMath.pdb
