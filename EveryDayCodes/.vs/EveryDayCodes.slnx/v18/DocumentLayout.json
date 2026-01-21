@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\EveryDayCodes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\DAY9\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessment\\everydaycodes\\everydaycodes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|solutionrelative:everydaycodes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessment\\everydaycodes\\everydaycodes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|solutionrelative:everydaycodes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessment\\everydaycodes\\everydaycodes\\oopslearning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|solutionrelative:everydaycodes\\oopslearning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\DAY9\\Program.cs",
+              "RelativeDocumentMoniker": "..\\DAY9\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\DAY9\\Program.cs",
+              "RelativeToolTip": "..\\DAY9\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T09:34:37.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\EveryDayCodes\\EveryDayCodes\\Employee.cs",
+              "RelativeDocumentMoniker": "EveryDayCodes\\Employee.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\EveryDayCodes\\EveryDayCodes\\Employee.cs",
+              "RelativeToolTip": "EveryDayCodes\\Employee.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwCoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T06:51:59.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OOPSLearning.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\EveryDayCodes\\EveryDayCodes\\OOPSLearning.cs",
+              "RelativeDocumentMoniker": "EveryDayCodes\\OOPSLearning.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\EveryDayCodes\\EveryDayCodes\\OOPSLearning.cs",
+              "RelativeToolTip": "EveryDayCodes\\OOPSLearning.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T04:22:50.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\EveryDayCodes\\EveryDayCodes\\Program.cs",
+              "RelativeDocumentMoniker": "EveryDayCodes\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessment\\EveryDayCodes\\EveryDayCodes\\Program.cs",
+              "RelativeToolTip": "EveryDayCodes\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T04:19:25.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
