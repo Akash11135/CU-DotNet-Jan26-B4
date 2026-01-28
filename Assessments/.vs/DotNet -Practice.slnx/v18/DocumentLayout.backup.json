@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{BA929B04-F534-4C36-A07E-6D44C0D81BCF}|DAY16\\DAY16.csproj|solutionrelative:day16\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CBBE308-FF67-4083-9A93-A451D530765B}|DAY10\\SalesOrder DAY10.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0CBBE308-FF67-4083-9A93-A451D530765B}|DAY10\\SalesOrder DAY10.csproj|D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CBBE308-FF67-4083-9A93-A451D530765B}|DAY10\\SalesOrder DAY10.csproj|solutionrelative:day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -55,8 +55,7 @@
               "RelativeToolTip": "DAY15\\Program.cs",
               "ViewState": "AgIAABQAAAAAAAAAAADwvzAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:19:48.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T09:19:48.08Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "DAY16\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:18:12.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T09:18:12.58Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "DAY10\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAKwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T08:55:34.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T08:55:34.522Z"
             }
           ]
         }
