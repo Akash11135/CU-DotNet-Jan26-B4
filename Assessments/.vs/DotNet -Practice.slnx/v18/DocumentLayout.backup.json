@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA929B04-F534-4C36-A07E-6D44C0D81BCF}|DAY16\\DAY16.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day16\\orderprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA929B04-F534-4C36-A07E-6D44C0D81BCF}|DAY16\\DAY16.csproj|solutionrelative:day16\\orderprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7BD1705-D8AC-4A18-9C26-7B5F77150B42}|DAY15\\DAY15.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BD1705-D8AC-4A18-9C26-7B5F77150B42}|DAY15\\DAY15.csproj|solutionrelative:day15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA929B04-F534-4C36-A07E-6D44C0D81BCF}|DAY16\\DAY16.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day16\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA929B04-F534-4C36-A07E-6D44C0D81BCF}|DAY16\\DAY16.csproj|solutionrelative:day16\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CBBE308-FF67-4083-9A93-A451D530765B}|DAY10\\SalesOrder DAY10.csproj|D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CBBE308-FF67-4083-9A93-A451D530765B}|DAY10\\SalesOrder DAY10.csproj|solutionrelative:day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B720BBF0-120D-45C3-8D75-4471E85E1DB6}|DAY20\\DAY20.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day20\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B720BBF0-120D-45C3-8D75-4471E85E1DB6}|DAY20\\DAY20.csproj|solutionrelative:day20\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,51 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderProcessing.cs",
-              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY16\\OrderProcessing.cs",
-              "RelativeDocumentMoniker": "DAY16\\OrderProcessing.cs",
-              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY16\\OrderProcessing.cs",
-              "RelativeToolTip": "DAY16\\OrderProcessing.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwGUAAAALAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY20\\Program.cs",
+              "RelativeDocumentMoniker": "DAY20\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY20\\Program.cs",
+              "RelativeToolTip": "DAY20\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:21:48.065Z",
+              "WhenOpened": "2026-01-29T08:39:23.699Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY15\\Program.cs",
-              "RelativeDocumentMoniker": "DAY15\\Program.cs",
-              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY15\\Program.cs",
-              "RelativeToolTip": "DAY15\\Program.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvzAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:19:48.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY16\\Program.cs",
-              "RelativeDocumentMoniker": "DAY16\\Program.cs",
-              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY16\\Program.cs",
-              "RelativeToolTip": "DAY16\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:18:12.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY10\\Program.cs",
-              "RelativeDocumentMoniker": "DAY10\\Program.cs",
-              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY10\\Program.cs",
-              "RelativeToolTip": "DAY10\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T08:55:34.522Z"
             }
           ]
         }
