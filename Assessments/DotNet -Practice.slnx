@@ -10,4 +10,5 @@
   <Project Path="DAY7/DAY7.csproj" />
   <Project Path="DAY8/String Logins DAY8/String Logins DAY8.csproj" Id="c46d4ab7-c750-496a-8ef0-60534b1fff95" />
   <Project Path="DAY9/SalesAnalysys/SalesAnalysys/SalesAnalysys DAY9.csproj" Id="d1966989-1b7e-44ab-ab38-9b8fcd51d028" />
+  <Project Path="Week 4 Assessment/Week 4 Assessment.csproj" Id="7063df5a-293b-43dd-b74e-26ec3742317e" />
 </Solution>

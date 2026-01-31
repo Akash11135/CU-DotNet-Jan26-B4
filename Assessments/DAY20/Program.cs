@@ -26,7 +26,7 @@
             public int Compare(Flight x , Flight y)
             {
                 if(x==null && y== null) return 0;
-                if (x == null) return 1;
+                if (x == null) return 1;  // to avoid null object comparison issues.
                 return x.Duration.CompareTo(y.Duration);
             }
         }
@@ -36,7 +36,7 @@
             public int Compare(Flight x, Flight y)
             {
                 if (x == null && y == null) return 0;
-                if (x == null) return 1;
+                if (x == null) return 1;   // to avoid null object comparison issues.
                 return x.DepartureTime.CompareTo(y.DepartureTime);
             }
         }
