@@ -1,15 +1,14 @@
 
-# Ignore everything by default
 *
 
-# Allow directories
 !*/
 
-# Allow only C# source files
 !*.cs
 
-# Allow gitignore itself
+!*.txt
+
 !.gitignore
+
 
 
 Day 1 assessment :- 

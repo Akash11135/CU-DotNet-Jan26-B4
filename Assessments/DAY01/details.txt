@@ -1,8 +1,0 @@
-Day 1 assessment :- 
-	Basic details about c# and dotnet.
-	Installation notes for c#, dotnet.
-	Installation notes for visual studio.
-	Basic concepts and introduction to c# and dotnet.
-	CLI , CLR , IL , BCL etc.
-	MS Learn quizzes.
-
