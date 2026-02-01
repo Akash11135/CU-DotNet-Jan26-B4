@@ -76,30 +76,30 @@ namespace EveryDayCodes
 
     internal class LoanCalculation
     {
-        public static void Main(string[] args)
-        {
+        //public static void Main(string[] args)
+        //{
 
 
-            Loan[] loans = new Loan [4]{
-                new HomeLoan(1, "Akash", 1500m, 1),
-                new HomeLoan(2, "Priya", 3000m, 3),
-                new CarLoan(3, "John", 2000m, 2),
-                new CarLoan(4, "Piyush", 50000m, 4),
-            };
+        //    Loan[] loans = new Loan [4]{
+        //        new HomeLoan(1, "Akash", 1500m, 1),
+        //        new HomeLoan(2, "Priya", 3000m, 3),
+        //        new CarLoan(3, "John", 2000m, 2),
+        //        new CarLoan(4, "Piyush", 50000m, 4),
+        //    };
 
-            for(int i=0; i<loans.Length;i++)
-            {
-                if(loans[i] is HomeLoan)
-                {
-                    HomeLoan homeLoan = (HomeLoan)loans[i];
-                    Console.WriteLine("Total Home Loan Amount for " + homeLoan.CustomerName + ": " + homeLoan.Amount());
-                }
-                else if(loans[i] is CarLoan)
-                {
-                    CarLoan carLoan = (CarLoan)loans[i];
-                    Console.WriteLine("Total Car Loan Amount for " + carLoan.CustomerName + ": " + carLoan.Amount());
-                }
-            }
-        }
+        //    for(int i=0; i<loans.Length;i++)
+        //    {
+        //        if(loans[i] is HomeLoan)
+        //        {
+        //            HomeLoan homeLoan = (HomeLoan)loans[i];
+        //            Console.WriteLine("Total Home Loan Amount for " + homeLoan.CustomerName + ": " + homeLoan.Amount());
+        //        }
+        //        else if(loans[i] is CarLoan)
+        //        {
+        //            CarLoan carLoan = (CarLoan)loans[i];
+        //            Console.WriteLine("Total Car Loan Amount for " + carLoan.CustomerName + ": " + carLoan.Amount());
+        //        }
+        //    }
+        //}
     }
 }

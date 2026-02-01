@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRUDOperation.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Laptops.cs" />
     <Compile Include="Loan.cs" />
+    <Compile Include="OLA.cs" />
     <Compile Include="OOPSLearning.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

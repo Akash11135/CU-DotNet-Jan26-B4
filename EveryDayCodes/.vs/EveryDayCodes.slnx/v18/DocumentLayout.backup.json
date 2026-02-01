@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\EveryDayCodes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\everydaycodes\\everydaycodes\\ques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|solutionrelative:everydaycodes\\ques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\everydaycodes\\everydaycodes\\crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|solutionrelative:everydaycodes\\crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\everydaycodes\\everydaycodes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\EveryDayCodes\\everydaycodes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFD8F334-8C67-4013-8DF8-F4042185039C}|EveryDayCodes\\EveryDayCodes.csproj|solutionrelative:everydaycodes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -21,6 +21,23 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CRUDOperation.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\EveryDayCodes\\EveryDayCodes\\CRUDOperation.cs",
+              "RelativeDocumentMoniker": "EveryDayCodes\\CRUDOperation.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\EveryDayCodes\\EveryDayCodes\\CRUDOperation.cs",
+              "RelativeToolTip": "EveryDayCodes\\CRUDOperation.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAowOcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T08:34:54.404Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
@@ -28,27 +45,9 @@
               "RelativeDocumentMoniker": "EveryDayCodes\\Program.cs",
               "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\EveryDayCodes\\EveryDayCodes\\Program.cs",
               "RelativeToolTip": "EveryDayCodes\\Program.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAswHIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAswI0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:47:11.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ques.cs",
-              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\EveryDayCodes\\EveryDayCodes\\ques.cs",
-              "RelativeDocumentMoniker": "EveryDayCodes\\ques.cs",
-              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\EveryDayCodes\\EveryDayCodes\\ques.cs",
-              "RelativeToolTip": "EveryDayCodes\\ques.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:46:34.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2026-01-27T09:47:11.89Z"
             }
           ]
         }

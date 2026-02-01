@@ -1,4 +1,18 @@
 
+# Ignore everything by default
+*
+
+
+# Allow directories
+!*/
+
+# Allow C# source files
+!*.cs
+
+# Allow gitignore
+!.gitignore
+
+
 Day 1 assessment :- 
 	Basic details about c# and dotnet.
 	Installation notes for c#, dotnet.

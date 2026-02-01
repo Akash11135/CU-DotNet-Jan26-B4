@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,7 +58,32 @@ namespace EveryDayCodes
             Console.WriteLine(sub);
         }
 
+        public void freq(string s)
+        {
+            string seq = s;
+            seq = seq.ToLower();
+            Dictionary<char, int> mp = new Dictionary<char, int>();
 
+            for(int i=0; i< seq.Length; i++)
+            {
+                if (seq[i]<=' ' || seq[i] > 'z')
+                {
+                    continue;
+                }
+                if(mp.ContainsKey(seq[i]))
+                {
+                    mp[seq[i]]++;
+                }
+                else
+                {
+                    mp[seq[i]] = 1;
+                }
+            }
+            foreach(var item in mp)
+            {
+                Console.WriteLine(item.Key + "--- " + item.Value);
+            }
+        }
 
     }
 
@@ -86,44 +112,47 @@ namespace EveryDayCodes
         }
     }
 
-    class Student : Person
-    {
+    //class Student : Person
+    //{
 
-        public string Degree { get; set; }
-        public string College { get; set; }
+    //    public string Degree { get; set; }
+    //    public string College { get; set; }
 
-        public Student()
-        {
-            Degree = string.Empty;
-            College = string.Empty;
-            Console.WriteLine("Student Default Constructor");
-        }
+    //    public Student()
+    //    {
+    //        Degree = string.Empty;
+    //        College = string.Empty;
+    //        Console.WriteLine("Student Default Constructor");
+    //    }
 
-        public Student(int id, string name, string degree, string college) : base(id, name) // to use SRP from SOLID principal
-        {
-            Degree = degree;
-            College = college;
-        }
+    //    public Student(int id, string name, string degree, string college) : base(id, name) // to use SRP from SOLID principal
+    //    {
+    //        Degree = degree;
+    //        College = college;
+    //    }
 
-        public override string ToString()
-        {
-            return base.ToString() + $"Degree: {Degree}, College: {College}";
-        }
-    }
+    //    public override string ToString()
+    //    {
+    //        return base.ToString() + $"Degree: {Degree}, College: {College}";
+    //    }
+    //}
 
     internal class Program
     {
-
+        //last ain at CRUDoperation.cs
         //static void Main(string[] args)
         //{
 
         //    Solution sol = new Solution();
-
+        //    string str = "This is a sentence";
+        //    sol.freq(str);
         //    //sol.SecondLargest(new int[] { 3, 5, 7, 2, 8 });
 
         //    //Solution.ReverseString("hello");
-        //    Person obj = new Student(1,"Akash" , "BE" , "CU");
-        //    Console.WriteLine(obj.ToString()); 
+        //    //Person obj = new Student(1, "Akash", "BE", "CU");
+        //    //Console.WriteLine(obj.ToString());
         //}
+
+
     }
 }

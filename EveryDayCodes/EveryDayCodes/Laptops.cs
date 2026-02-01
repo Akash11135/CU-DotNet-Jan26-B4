@@ -31,20 +31,8 @@ namespace EveryDayCodes
 
     internal class Laptops
     {
-        Laptop[] laptops = new Laptop[]
-        {
-            new Laptop()
-            {
-                LaptopId=1,
-                Company="Dell",
-                ModelName="Inspiron",
-                Price=55000
-            },
-            new Laptop()
-            {
-
-            }
-        };
+        
+       
 
        
     }

@@ -14,8 +14,9 @@ namespace EveryDayCodes
     internal class ques
 
     {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("hello");
-        }
+        //public static void Main(string[] args)
+        //{
+        //    Console.WriteLine("hello");
+        //}
+    } 
 }
