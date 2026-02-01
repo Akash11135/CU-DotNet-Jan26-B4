@@ -10,6 +10,11 @@
 !.gitignore
 
 
+Properties/**
+obj/**
+bin/**
+.vs/**
+
 
 Day 1 assessment :- 
 	Basic details about c# and dotnet.
