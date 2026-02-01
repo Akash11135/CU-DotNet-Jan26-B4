@@ -2,14 +2,13 @@
 # Ignore everything by default
 *
 
-
 # Allow directories
 !*/
 
-# Allow C# source files
+# Allow only C# source files
 !*.cs
 
-# Allow gitignore
+# Allow gitignore itself
 !.gitignore
 
 
