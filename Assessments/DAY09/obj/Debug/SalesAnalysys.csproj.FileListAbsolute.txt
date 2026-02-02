@@ -1,7 +1,0 @@
-D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY9\SalesAnalysys\SalesAnalysys\bin\Debug\SalesAnalysys.exe.config
-D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY9\SalesAnalysys\SalesAnalysys\bin\Debug\SalesAnalysys.exe
-D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY9\SalesAnalysys\SalesAnalysys\bin\Debug\SalesAnalysys.pdb
-D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY9\SalesAnalysys\SalesAnalysys\obj\Debug\SalesAnalysys.csproj.AssemblyReference.cache
-D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY9\SalesAnalysys\SalesAnalysys\obj\Debug\SalesAnalysys.csproj.CoreCompileInputs.cache
-D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY9\SalesAnalysys\SalesAnalysys\obj\Debug\SalesAnalysys.exe
-D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\DAY9\SalesAnalysys\SalesAnalysys\obj\Debug\SalesAnalysys.pdb
