@@ -23,26 +23,7 @@ namespace EveryDayCodes
             VehicleNumber = vehicleNumber;
         }
 
-        public void AddRide(string driverName, Rides ride)
-        {
-           Rides newRide = new            Ride                   
-        } 
-
-        public int CalculateTotalFare()
-        {
-            
-        }
-
-        public int RidesCount()
-        {
-
-        }
-
-        public void DisplayRides()
-        {
-
-        }
-
+       
     }
 
     class Rides

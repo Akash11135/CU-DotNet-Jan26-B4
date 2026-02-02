@@ -1,22 +1,32 @@
 
-# Ignore everything by default
+
+# ========================
+# IGNORE EVERYTHING FIRST
+# ========================
 *
 
-# Allow directories
+# ========================
+# ALLOW FOLDERS (so Git can traverse)
+# ========================
 !*/
 
-# Allow source files
+# ========================
+# ALLOW SOURCE FILES ONLY
+# ========================
 !*.cs
 !*.txt
-
-# Allow gitignore
+!*.md
 !.gitignore
 
-# ❌ Explicitly block build/system folders (OVERRIDES above rules)
-Properties/**
-obj/**
-bin/**
-.vs/**
+# ========================
+# FORCE-IGNORE BUILD & IDE FILES
+# (even if they contain .cs)
+# ========================
+**/bin/**
+**/obj/**
+**/.vs/**
+**/Properties/**
+
 
 
 Day 1 assessment :- 
