@@ -1,15 +1,18 @@
 
+# Ignore everything by default
 *
 
+# Allow directories
 !*/
 
+# Allow source files
 !*.cs
-
 !*.txt
 
+# Allow gitignore
 !.gitignore
 
-
+# ❌ Explicitly block build/system folders (OVERRIDES above rules)
 Properties/**
 obj/**
 bin/**
