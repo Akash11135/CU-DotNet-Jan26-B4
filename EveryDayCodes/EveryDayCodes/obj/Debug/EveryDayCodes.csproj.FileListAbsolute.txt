@@ -1,0 +1,14 @@
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.csproj.AssemblyReference.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.csproj.CoreCompileInputs.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\EveryDayCodes\EveryDayCodes\bin\Debug\EveryDayCodes.exe.config
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\EveryDayCodes\EveryDayCodes\bin\Debug\EveryDayCodes.exe
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\EveryDayCodes\EveryDayCodes\bin\Debug\EveryDayCodes.pdb
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.exe
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\Assessment\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.pdb
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.csproj.AssemblyReference.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.csproj.CoreCompileInputs.cache
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.exe
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\EveryDayCodes\EveryDayCodes\obj\Debug\EveryDayCodes.pdb
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\EveryDayCodes\EveryDayCodes\bin\Debug\EveryDayCodes.exe.config
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\EveryDayCodes\EveryDayCodes\bin\Debug\EveryDayCodes.exe
+D:\college\CAPEGIMINI\assessments\CU-DotNet-Jan26-B4\EveryDayCodes\EveryDayCodes\bin\Debug\EveryDayCodes.pdb
