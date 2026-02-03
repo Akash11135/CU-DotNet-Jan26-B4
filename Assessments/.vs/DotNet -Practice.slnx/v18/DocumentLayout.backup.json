@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE9024CE-E2C8-5EA4-8C92-AEF755CC74D4}|DAY23\\DAY23.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE9024CE-E2C8-5EA4-8C92-AEF755CC74D4}|DAY23\\DAY23.csproj|solutionrelative:day23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY23\\Program.cs",
+              "RelativeDocumentMoniker": "DAY23\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY23\\Program.cs",
+              "RelativeToolTip": "DAY23\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAvwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T04:13:10.383Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
