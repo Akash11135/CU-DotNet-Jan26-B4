@@ -1,0 +1,21 @@
+<Solution>
+  <Project Path="DAY07/DAY07.csproj" />
+  <Project Path="DAY08/DAY08.csproj" Id="c46d4ab7-c750-496a-8ef0-60534b1fff95" />
+  <Project Path="DAY09/DAY09.csproj" Id="d1966989-1b7e-44ab-ab38-9b8fcd51d028" />
+  <Project Path="DAY10/DAY10.csproj" Id="0cbbe308-ff67-4083-9a93-a451d530765b" />
+  <Project Path="DAY11/DAY11.csproj" Id="e370f29e-367c-49b1-baff-19006bbe6c86" />
+  <Project Path="DAY13/DAY13.csproj" Id="a1a24550-86cb-4005-a0f8-5533db9738e1" />
+  <Project Path="DAY14/DAY14.csproj" Id="d102ca38-c62e-4343-a58a-0ccf1207993f" />
+  <Project Path="DAY15/DAY15.csproj" Id="d7bd1705-d8ac-4a18-9c26-7b5f77150b42" />
+  <Project Path="DAY16/DAY16.csproj" Id="ba929b04-f534-4c36-a07e-6d44c0d81bcf" />
+  <Project Path="DAY18/DAY18.csproj" Id="0fd9c20e-2ecb-457b-aafb-71f50d613ee6" />
+  <Project Path="DAY20/DAY20.csproj" Id="b720bbf0-120d-45c3-8d75-4471e85e1db6" />
+  <Project Path="DAY21/DAY21.csproj" Id="427be541-cfba-4be9-9b1b-d8d4d1a5d727" />
+  <Project Path="DAY22/DAY22.csproj" Id="f8eae0fe-aede-42b4-8e1c-268d24b2ed92" />
+  <Project Path="DAY23/DAY23.csproj" />
+  <Project Path="DAY24/DAY24.csproj" Id="944127e7-f83a-44bd-a7f6-b245bb998b93" />
+  <Project Path="DAY25/DAY25.csproj" Id="bfc59868-7d5a-45ad-9cb6-a7b47eb97483" />
+  <Project Path="DAY26/DAY26.csproj" Id="4525a43a-fa55-40a4-aff3-8dc0775ca710" />
+  <Project Path="Week 4 Assessment/Week 4 Assessment.csproj" Id="7063df5a-293b-43dd-b74e-26ec3742317e" />
+  <Project Path="Week2 Assessment/Week 2 Assessment.csproj" Id="ded83b4c-790d-4c14-89fe-ca9608d5579d" />
+</Solution>
