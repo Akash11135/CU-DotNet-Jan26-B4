@@ -17,5 +17,6 @@
   <Project Path="DAY25/DAY25.csproj" Id="bfc59868-7d5a-45ad-9cb6-a7b47eb97483" />
   <Project Path="DAY26/DAY26.csproj" Id="4525a43a-fa55-40a4-aff3-8dc0775ca710" />
   <Project Path="Week 4 Assessment/Week 4 Assessment.csproj" Id="7063df5a-293b-43dd-b74e-26ec3742317e" />
+  <Project Path="Week 5 Assessment/Week 5 Assessment.csproj" Id="9f1a02c8-7873-4a1c-ac3e-53e5c85afeae" />
   <Project Path="Week2 Assessment/Week 2 Assessment.csproj" Id="ded83b4c-790d-4c14-89fe-ca9608d5579d" />
 </Solution>
