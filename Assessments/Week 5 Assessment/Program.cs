@@ -130,7 +130,7 @@ namespace Week_5_Assessment
                     
                 }
 
-                using (StreamWriter sw = new StreamWriter(FinalPath)) 
+                using (StreamWriter sw = new StreamWriter(FinalPath) , append:true) 
                 {
                     sw.WriteLine(LogMessage);
                 }
