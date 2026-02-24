@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../app1/app1.csproj" Id="a7b071a4-3b37-436f-9035-6b5597e116e2" />
+  <Project Path="../async_await/async_await.csproj" Id="e0bf899c-ed9f-4491-9aaa-cdd4639aedb4" />
+  <Project Path="../Revision/Revision.csproj" Id="439fabbf-7a1c-4e51-abe9-622a9de861af" />
+  <Project Path="../Threads/Threads.csproj" Id="9c3aefd2-d1fe-4a33-baf7-a56dc9d40502" />
+  <Project Path="EveryDayCodes.csproj" Id="bfd8f334-8c67-4013-8df8-f4042185039c" />
+</Solution>

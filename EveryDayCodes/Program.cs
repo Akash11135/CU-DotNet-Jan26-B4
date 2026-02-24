@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+// virtual method , 
 namespace EveryDayCodes
 {
     class Solution
@@ -25,19 +27,7 @@ namespace EveryDayCodes
             Console.WriteLine("second largest element : " + nums[nums.Length - 2]);
         }
 
-        //public virtual override Equals(Object obj)
-        //{
-
-        //    Solution obj1 = new Solution("Piyush");
-        //    if (obj1.Equals(obj))
-        //    {
-        //        Console.WriteLine("Objects are equal.");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Objects are not equal.");
-        //    }
-        //}
+    
 
         public static void ReverseString(string s)
 
@@ -85,73 +75,25 @@ namespace EveryDayCodes
             }
         }
 
+        public void funct(int [] arr )
+        {
+            int ans = arr.Where(x => x % 2 == 1).Count();
+            Console.WriteLine("ans : "+ans);
+        }
+
     }
 
 
-    partial class Person
-    {
-        public int AadharId { get; set; }
-        public string Name { get; set; }
-       
-        public Person()
-        {
-            AadharId = 0;
-            Name = string.Empty;
-            Console.WriteLine("Person Default Constructor");
-        }
-
-        public Person(int Aadhar, string Name)
-        {
-            this.AadharId = Aadhar;
-            this.Name = Name;
-        }
-
-        public override string ToString()
-        {
-            return $"Aadhar : {AadharId} , Name : {Name} ";
-        }
-    }
-
-    //class Student : Person
-    //{
-
-    //    public string Degree { get; set; }
-    //    public string College { get; set; }
-
-    //    public Student()
-    //    {
-    //        Degree = string.Empty;
-    //        College = string.Empty;
-    //        Console.WriteLine("Student Default Constructor");
-    //    }
-
-    //    public Student(int id, string name, string degree, string college) : base(id, name) // to use SRP from SOLID principal
-    //    {
-    //        Degree = degree;
-    //        College = college;
-    //    }
-
-    //    public override string ToString()
-    //    {
-    //        return base.ToString() + $"Degree: {Degree}, College: {College}";
-    //    }
-    //}
+    
 
     internal class Program
     {
-        //last ain at CRUDoperation.cs
-        //static void Main(string[] args)
-        //{
-
-        //    Solution sol = new Solution();
-        //    string str = "This is a sentence";
-        //    sol.freq(str);
-        //    //sol.SecondLargest(new int[] { 3, 5, 7, 2, 8 });
-
-        //    //Solution.ReverseString("hello");
-        //    //Person obj = new Student(1, "Akash", "BE", "CU");
-        //    //Console.WriteLine(obj.ToString());
-        //}
+      //static void Main(string[] args)
+      //  {
+      //      Solution s = new Solution();
+      //      int[] arr = { 1, 2, 3, 4, 5 };
+      //      s.funct(arr);
+      //  }
 
 
     }

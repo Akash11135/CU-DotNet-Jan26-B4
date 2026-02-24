@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9FAD8CCC-DD93-4093-BDAD-B19DD41BA43C}|DAY31 LINQ\\DAY31 LINQ.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day31 linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAD8CCC-DD93-4093-BDAD-B19DD41BA43C}|DAY31 LINQ\\DAY31 LINQ.csproj|solutionrelative:day31 linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60E00293-57FE-BCF6-C9CF-D205C4962FCD}|DAY07\\DAY07.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day07\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60E00293-57FE-BCF6-C9CF-D205C4962FCD}|DAY07\\DAY07.csproj|solutionrelative:day07\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F1A02C8-7873-4A1C-AC3E-53E5C85AFEAE}|Week 5 Assessment\\Week 5 Assessment.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\week 5 assessment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F1A02C8-7873-4A1C-AC3E-53E5C85AFEAE}|Week 5 Assessment\\Week 5 Assessment.csproj|solutionrelative:week 5 assessment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +34,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY31 LINQ\\Program.cs",
+              "RelativeDocumentMoniker": "DAY31 LINQ\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY31 LINQ\\Program.cs",
+              "RelativeToolTip": "DAY31 LINQ\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T08:55:09.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY07\\Program.cs",
+              "RelativeDocumentMoniker": "DAY07\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY07\\Program.cs",
+              "RelativeToolTip": "DAY07\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T10:43:25.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ILoggable.cs",
               "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\Week 5 Assessment\\ILoggable.cs",
               "RelativeDocumentMoniker": "Week 5 Assessment\\ILoggable.cs",
@@ -34,21 +67,19 @@
               "RelativeToolTip": "Week 5 Assessment\\ILoggable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T04:39:07.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T04:39:07.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\Week 5 Assessment\\Program.cs",
               "RelativeDocumentMoniker": "Week 5 Assessment\\Program.cs",
               "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\Week 5 Assessment\\Program.cs",
               "RelativeToolTip": "Week 5 Assessment\\Program.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAADwv2AAAAC0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T04:34:47.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T04:34:47.505Z"
             }
           ]
         }

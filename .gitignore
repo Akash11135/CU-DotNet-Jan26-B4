@@ -3,7 +3,7 @@
 # ========================
 # IGNORE EVERYTHING FIRST
 # ========================
-*
+
 
 # ========================
 # ALLOW FOLDERS (so Git can traverse)
