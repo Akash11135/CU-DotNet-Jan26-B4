@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLaptop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Laptop>
+    <Id>1</Id>
+    <Model>HP Pavilion</Model>
+    <Price>10000</Price>
+  </Laptop>
+  <Laptop>
+    <Id>2</Id>
+    <Model>Dell</Model>
+    <Price>20000</Price>
+  </Laptop>
+  <Laptop>
+    <Id>3</Id>
+    <Model>Acer</Model>
+    <Price>15000</Price>
+  </Laptop>
+</ArrayOfLaptop>

@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="xmlfile\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties xmlfile_4laptops_1json__JsonSchema="https://api.app-prg1.zerops.io/api/rest/public/settings/zerops-yml-json-schema.json" /></VisualStudio></ProjectExtensions>
+
 </Project>

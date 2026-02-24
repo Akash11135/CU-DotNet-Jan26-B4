@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "Model": "HP Pavilion",
+    "Price": 10000
+  },
+  {
+    "Id": 2,
+    "Model": "Dell",
+    "Price": 20000
+  },
+  {
+    "Id": 3,
+    "Model": "Acer",
+    "Price": 15000
+  }
+]
