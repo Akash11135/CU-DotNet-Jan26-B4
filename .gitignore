@@ -1,54 +1,38 @@
 
 # ========================
-# IGNORE EVERYTHING FIRST
+# BUILD OUTPUT
 # ========================
-*
+bin/
+obj/
+**/bin/
+**/obj/
 
 # ========================
-# ALLOW FOLDERS (IMPORTANT)
-# ========================
-!*/
-
-# ========================
-# ALLOW FILE TYPES YOU WANT
-# ========================
-!*.cs
-!*.txt
-!*.md
-!*.json
-!*.xml
-!*.pdf
-!.gitignore
-
-# ========================
-# BLOCK PROJECT / BUILD FILES
-# ========================
-*.csproj
-*.sln
-*.snlx
-*.user
-*.suo
-
-# ========================
-# BLOCK BUILD OUTPUT
-# ========================
-**/bin/**
-**/obj/**
-
-# ========================
-# BLOCK IDE FILES
+# IDE FILES
 # ========================
 .vs/
 .vscode/
 .idea/
 
 # ========================
-# OPTIONAL: KEEP DATA FOLDERS
-# (if you want to be explicit)
+# USER / TEMP FILES
 # ========================
-!Data/**
-!Files/**
-!Resources/**
+*.user
+*.suo
+
+# ========================
+# PROJECT FILES (optional)
+# ========================
+*.csproj
+*.sln
+*.slnx
+
+# ========================
+# KEEP YOUR DATA FOLDERS
+# ========================
+Data/
+Files/
+Resources/
 
 Day 1 assessment :- 
 	Basic details about c# and dotnet.
