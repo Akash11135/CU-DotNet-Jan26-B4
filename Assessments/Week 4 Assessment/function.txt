@@ -1,0 +1,77 @@
+function
+create function function_name
+types- scalar valued 
+table valued
+
+eg: create function GetDouble
+()
+returns int
+as
+begin       
+    return @num*2
+end
+select dbo.GetDouble(10)
+or
+select CategoryID, dbo.GetDouble(CategoryID) from Categories ;
+
+to execute a function we can use a select statament 
+prcedure annot be used in a select statment function can be used
+
+create a function to get 10 % discount in product prices
+create function GetDiscount
+(@price double(10,2))
+returns decial(10,2)
+as
+begin
+    return @price- @price*0.10;
+end
+Select ProductID,UnitPrice, dbo.GetDiscount(UnitPrice) AS Discounted from Products;
+Table valued function
+create a fucntion to return products between price ranges
+create function GetProductsBetweenRanges
+(@minRange int, @maxRange int)
+return Table
+as 
+return(
+	select ProductID,ProductName,UnitPrice
+	from products
+	where unitPrice	
+	between @minRange and @maxRange
+)
+
+select dbo.GetProductBetweenRanges(10,20)
+
+sql server built function
+left,right,Length,substring
+
+ADO.NET(Activex data objects)
+why we use it? As a .Net developer we could connect any server through coding and manipulate the data(crud operations)
+how to add a namespace required for coding
+we try to get it using Manage NuGet package option
+if we want to handle data at base level we can use ADO.NET
+
+we have some classes to handle 
+EF -Entity framework is an orm (object relation mapper)
+
+
+to connect to a sql server we need server information
+we will create a connection object and pass this information
+like- server name , authentication, on that server which database should be connected
+Authentication mode  Windows
+
+connection string can be taken from a connection in severer explorer
+Open server explorer
+create a connection 
+open connection properties
+create sqlCommand object
+use connection property to connect with connection
+use sqlDataReader to get data from sql server
+data reader is a read only sequential reader
+command.ExecuteReader will return reader object
+
+Query- select
+NonQuery - insert,update,delete 
+never creates command query using concat string 
+always prefer parameterised 
+
+

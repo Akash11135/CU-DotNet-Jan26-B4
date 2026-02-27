@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Employee
 {
 
-
     class Employee
     {
         // 1. Private data member with explicit methods

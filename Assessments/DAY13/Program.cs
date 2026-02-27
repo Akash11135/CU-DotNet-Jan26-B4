@@ -1,6 +1,7 @@
 ﻿using System;
 
-class GymMembership
+//DAY13-01
+class GymMembership_DAY13_01
 {
     // Method to calculate monthly membership amount
     public static decimal CalculateMembershipAmount(
@@ -43,6 +44,7 @@ class GymMembership
     }
 }
 
+//DAY13 -02
 class LineDisplay
 {
     // 1. No parameter → 40 '-'
@@ -64,12 +66,13 @@ class LineDisplay
     }
 }
 
+
 class Program
 {
     static void Main()
     {
         // Gym Membership Calculation
-        decimal amount = GymMembership.CalculateMembershipAmount(
+        decimal amount = GymMembership_DAY13_01.CalculateMembershipAmount(
             treadMill: true,
             weightLifting: false,
             zumba: true

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFC59868-7D5A-45AD-9CB6-A7B47EB97483}|DAY25\\DAY25.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day25\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC59868-7D5A-45AD-9CB6-A7B47EB97483}|DAY25\\DAY25.csproj|solutionrelative:day25\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC59868-7D5A-45AD-9CB6-A7B47EB97483}|DAY25\\DAY25.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day25\\xmlfile\\laptops.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BFC59868-7D5A-45AD-9CB6-A7B47EB97483}|DAY25\\DAY25.csproj|solutionrelative:day25\\xmlfile\\laptops.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C46D4AB7-C750-496A-8EF0-60534B1FFF95}|DAY08\\DAY08.csproj|d:\\college\\capegimini\\assessments\\cu-dotnet-jan26-b4\\assessments\\day08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46D4AB7-C750-496A-8EF0-60534B1FFF95}|DAY08\\DAY08.csproj|solutionrelative:day08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "laptops.json",
-              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY25\\xmlfile\\laptops.json",
-              "RelativeDocumentMoniker": "DAY25\\xmlfile\\laptops.json",
-              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY25\\xmlfile\\laptops.json",
-              "RelativeToolTip": "DAY25\\xmlfile\\laptops.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-24T09:05:41.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY25\\Program.cs",
-              "RelativeDocumentMoniker": "DAY25\\Program.cs",
-              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY25\\Program.cs",
-              "RelativeToolTip": "DAY25\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAqwGAAAAANAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY08\\Program.cs",
+              "RelativeDocumentMoniker": "DAY08\\Program.cs",
+              "ToolTip": "D:\\college\\CAPEGIMINI\\assessments\\CU-DotNet-Jan26-B4\\Assessments\\DAY08\\Program.cs",
+              "RelativeToolTip": "DAY08\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T06:48:32.42Z",
+              "WhenOpened": "2026-02-27T09:52:37.278Z",
               "EditorCaption": ""
             }
           ]

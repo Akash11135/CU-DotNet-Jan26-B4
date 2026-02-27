@@ -9,6 +9,7 @@
   <Project Path="DAY15/DAY15.csproj" Id="d7bd1705-d8ac-4a18-9c26-7b5f77150b42" />
   <Project Path="DAY16/DAY16.csproj" Id="ba929b04-f534-4c36-a07e-6d44c0d81bcf" />
   <Project Path="DAY18/DAY18.csproj" Id="0fd9c20e-2ecb-457b-aafb-71f50d613ee6" />
+  <Project Path="DAY19/DAY19.csproj" />
   <Project Path="DAY20/DAY20.csproj" Id="b720bbf0-120d-45c3-8d75-4471e85e1db6" />
   <Project Path="DAY21/DAY21.csproj" Id="427be541-cfba-4be9-9b1b-d8d4d1a5d727" />
   <Project Path="DAY22/DAY22.csproj" Id="f8eae0fe-aede-42b4-8e1c-268d24b2ed92" />
@@ -22,6 +23,7 @@
   <Project Path="DAY32 Social Network/DAY34 Social Network.csproj" Id="6ea336d8-bf05-49b7-a668-8990a162463e" />
   <Project Path="DAY35/DAY35.csproj" Id="72c9bbab-0f3f-4800-aaad-f6bed55b45bd" />
   <Project Path="DAY38/DAY38.csproj" Id="ab8067f2-cd9b-409f-8c17-1fed47edf266" />
+  <Project Path="DAY41_FinancialPortfolioMgmt/DAY41_FinancialPortfolioMgmt.csproj" Id="e278bce8-0320-4291-a021-9ae42fcf53da" />
   <Project Path="revision_linq/revision_linq.csproj" Id="438c10f8-03bc-4830-acfa-964090470788" />
   <Project Path="Week 4 Assessment/Week 4 Assessment.csproj" Id="7063df5a-293b-43dd-b74e-26ec3742317e" />
   <Project Path="Week 5 Assessment/Week 5 Assessment.csproj" Id="9f1a02c8-7873-4a1c-ac3e-53e5c85afeae" />

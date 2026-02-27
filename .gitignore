@@ -1,35 +1,53 @@
 
-
 # ========================
 # IGNORE EVERYTHING FIRST
 # ========================
-
+*
 
 # ========================
-# ALLOW FOLDERS (so Git can traverse)
+# ALLOW FOLDERS (IMPORTANT)
 # ========================
 !*/
 
 # ========================
-# ALLOW SOURCE FILES ONLY
+# ALLOW FILE TYPES YOU WANT
 # ========================
 !*.cs
 !*.txt
 !*.md
+!*.json
+!*.xml
 !*.pdf
 !.gitignore
 
 # ========================
-# FORCE-IGNORE BUILD & IDE FILES
-# (even if they contain .cs)
+# BLOCK PROJECT / BUILD FILES
+# ========================
+*.csproj
+*.sln
+*.user
+*.suo
+
+# ========================
+# BLOCK BUILD OUTPUT
 # ========================
 **/bin/**
 **/obj/**
 
-**/.vs/**
-**/Properties/**
+# ========================
+# BLOCK IDE FILES
+# ========================
+.vs/
+.vscode/
+.idea/
 
-
+# ========================
+# OPTIONAL: KEEP DATA FOLDERS
+# (if you want to be explicit)
+# ========================
+!Data/**
+!Files/**
+!Resources/**
 
 Day 1 assessment :- 
 	Basic details about c# and dotnet.
