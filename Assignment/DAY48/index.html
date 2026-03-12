@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Admission Form</title>
+</head>
+
+<body>
+
+<h2>College Admission Application Form</h2>
+
+<form>
+
+<table border="1" cellpadding="8">
+
+<tr>
+<td>Full Name</td>
+<td>
+<input type="text" name="name" placeholder="Enter full name" required>
+</td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td>
+<input type="password" name="password" minlength="6" required>
+</td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>
+<input type="email" name="email" placeholder="abc@gmail.com" required>
+</td>
+</tr>
+
+<tr>
+<td>Phone Number</td>
+<td>
+<input type="tel" name="phone" pattern="[0-9]{10}" placeholder="10 digit number" required>
+</td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td>
+<input type="date" name="dob" required>
+</td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td>
+<input type="number" name="age" min="16" max="40">
+</td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</td>
+</tr>
+
+<tr>
+<td>Course Applying For</td>
+<td>
+<select name="course">
+<option>BCA</option>
+<option>BBA</option>
+<option>B.Tech</option>
+<option>MCA</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Skills</td>
+<td>
+<input type="checkbox"> Programming
+<input type="checkbox"> Communication
+<input type="checkbox"> Sports
+</td>
+</tr>
+
+<tr>
+<td>Preferred Study Time</td>
+<td>
+<input type="time">
+</td>
+</tr>
+
+<tr>
+<td>Website / Portfolio</td>
+<td>
+<input type="url" placeholder="https://example.com">
+</td>
+</tr>
+
+<tr>
+<td>Favorite Color</td>
+<td>
+<input type="color">
+</td>
+</tr>
+
+<tr>
+<td>Upload Photo</td>
+<td>
+<input type="file">
+</td>
+</tr>
+
+<tr>
+<td>Interest Level</td>
+<td>
+<input type="range" min="1" max="10">
+</td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td>
+<textarea rows="4" cols="30" placeholder="Enter address"></textarea>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit Application">
+<input type="reset" value="Reset Form">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
