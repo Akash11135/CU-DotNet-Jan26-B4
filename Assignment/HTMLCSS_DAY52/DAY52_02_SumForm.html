@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vw;">
+
+        <script>
+            function addTwoNumbers(){
+
+                var num1El = document.getElementById("number1");
+                var num2El = document.getElementById("number2");
+                var resultEl = document.getElementById("result");
+
+                var num1 = num1El.value;
+                var num2 = num2El.value;
+
+                var hasError = false;
+
+                if(num1 === ""){
+                    num1El.style.backgroundColor = "red";
+                    hasError = true;
+                }
+
+                if(num2 === ""){
+                    num2El.style.backgroundColor = "red";
+                    hasError = true;
+                }
+
+                if(hasError){
+                    resultEl.style.backgroundColor = "yellow";
+                    resultEl.value = "Error";
+                    return;
+                }
+
+                var result = parseFloat(num1) + parseFloat(num2);
+                resultEl.value = result;
+            }
+    </script>
+    <script>
+        function handlReset(){
+            document.getElementById("number1").value = "";
+            document.getElementById("number2").value = "";
+            document.getElementById("result").value = "";
+            document.getElementById("number1").style.backgroundColor = "white";
+            document.getElementById("number2").style.backgroundColor = "white";
+            document.getElementById("result").style.backgroundColor = "white";
+        }
+    </script>
+    <div class="container" style="border: 1px solid black; display: flex; align-items: center; justify-content: center; padding: 1rem; height: 50vh; width: 50vw;">
+        <textarea name="number1" id="number1" style="margin: 5px;"></textarea>
+        <span>+</span>
+        <textarea name="number2" id="number2" style="margin: 5px;"></textarea> 
+        <button onclick="addTwoNumbers()">=</button>   
+        <textarea name="result" id="result" readonly style="margin: 5px;"></textarea>
+        <button style="padding: 0.75rem; border: none; outline: none; background-color: gray;" onclick="handlReset()">RESET</button>
+    </div>
+</body>
+</html>

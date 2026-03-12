@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DAY54_BS_Site.styles.css" asp-append-version="true" />
+</head>
+<style>
+    nav{
+        margin-bottom:1rem;
+    }
+    .nav-item{
+        border-bottom:1px solid transparent;
+        cursor:pointer;
+    }
+    .nav-item:hover{
+        border-bottom:1px solid white;
+    }
+    body{
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+
+    }
+    /* footer{
+        position:fixed;
+        bottom:0;
+        width:100%;
+    } */
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow"
+         style="background: linear-gradient(90deg,#0f2027,#203a43,#2c5364);">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">
+                CompanyPortal
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto" style=" width:60% ; display:flex ; justify-content:space-evenly; align-items:center">
+
+                    <li class="nav-item"  >
+                        <a class="nav-link" asp-controller="NewHome" asp-action="Index">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="NewHome" asp-action="About">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Services" asp-action="Consulting">Consulting</a></li>
+                            <li><a class="dropdown-item" asp-controller="Services" asp-action="Training">Training</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Products" asp-action="Software">Software</a></li>
+                            <li><a class="dropdown-item" asp-controller="Products" asp-action="Tools">Tools</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="bg-dark text-white mt-5">
+
+        <div class="container py-4">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h5>CompanyPortal</h5>
+                    <p>Providing modern digital solutions worldwide.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li>Consulting</li>
+                        <li>Training</li>
+                        <li>Software</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h6>Contact</h6>
+                    <p>Email: info@company.com</p>
+                    <p>Phone: +91 9876543210</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="text-center mb-0">
+                © 2026 CompanyPortal. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

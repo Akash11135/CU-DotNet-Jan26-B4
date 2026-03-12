@@ -1,0 +1,59 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container mt-5">
+
+    <div class="p-5 mb-4 bg-dark text-white rounded-3 shadow">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Welcome to CompanyPortal</h1>
+            <p class="col-md-8 fs-5">
+                Delivering modern digital solutions for businesses worldwide.
+            </p>
+            <a asp-controller="Services" asp-action="Index" class="btn btn-primary btn-lg">
+                Explore Services
+            </a>
+        </div>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+                <div class="card-body text-center">
+                    <h4>Consulting</h4>
+                    <p>Strategic consulting to accelerate your business growth.</p>
+                    <a asp-controller="Services" asp-action="Consulting" class="btn btn-outline-primary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+                <div class="card-body text-center">
+                    <h4>Software</h4>
+                    <p>Enterprise software products designed for scalability.</p>
+                    <a asp-controller="Products" asp-action="Software" class="btn btn-outline-success">
+                        View Products
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+                <div class="card-body text-center">
+                    <h4>Training</h4>
+                    <p>Upskill your team with industry-leading training programs.</p>
+                    <a asp-controller="Services" asp-action="Training" class="btn btn-outline-warning">
+                        Start Learning
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
