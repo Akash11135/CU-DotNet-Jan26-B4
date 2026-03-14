@@ -1,0 +1,45 @@
+﻿@model List<Week10_FinanceWebsite.Models.Account>
+
+@if (TempData["Success"] != null)
+{
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div class="toast show">
+            <div class="toast-header bg-success text-white">
+                <strong class="me-auto">Success</strong>
+            </div>
+            <div class="toast-body">
+                @TempData["Success"]
+            </div>
+        </div>
+    </div>
+}
+<h2>Accounts</h2>
+
+
+<a asp-action="Create" class="btn btn-primary mb-3">Create Account</a>
+
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Account Name</th>
+        <th>Balance</th>
+        <th>View Transactions</th>
+    </tr>
+
+    @if (Model != null)
+    {
+        foreach (var account in Model)
+        {
+            <tr>
+                <td>@account.AccountId</td>
+                <td>@account.Name</td>
+                <td>@account.Balance</td>
+                <td>
+                    <a href="/Account/Transactions/@account.AccountId" class="btn btn-success">View</a>
+                </td>
+            </tr>
+        }
+    }
+
+</table>

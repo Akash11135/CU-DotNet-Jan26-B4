@@ -1,0 +1,42 @@
+﻿@model List<Asset>
+
+<h2>Portfolio</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
+<table class="table">
+    <tr>
+        <th>AssetName</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Asset Information</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.Quantity</td>
+            <td>
+                <a href="/Asset/Info/@item.Id" class="btn btn-info">
+                    Info
+                </a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+@{
+    double total = (double)ViewData["Total"];
+}
+
+<p>Total Portfolio Value: @total</p>
+
+<p>Total + 500 = @(total + 500)</p>

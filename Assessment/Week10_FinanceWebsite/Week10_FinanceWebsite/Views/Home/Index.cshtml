@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "FinTrack Pro Dashboard";
+}
+
+<div class="container mt-4">
+
+    <h1 class="text-center mb-4">📊 FinTrack Pro</h1>
+    <p class="text-center text-muted">Manage accounts, portfolios and market insights</p>
+
+    <div class="row g-4 mt-3">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h4>💰 Accounts</h4>
+                    <p>Manage bank accounts and balances.</p>
+                    <a class="btn btn-primary"
+                       asp-controller="Account"
+                       asp-action="Index">
+                        View Accounts
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h4>📈 Portfolio</h4>
+                    <p>Track your stock assets and portfolio value.</p>
+                    <a class="btn btn-success"
+                       asp-controller="Portfolio"
+                       asp-action="Index">
+                        View Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h4>🌎 Market</h4>
+                    <p>Check market trends and analytics.</p>
+                    <a class="btn btn-warning"
+                       asp-controller="Market"
+                       asp-action="Summary">
+                        Market Summary
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

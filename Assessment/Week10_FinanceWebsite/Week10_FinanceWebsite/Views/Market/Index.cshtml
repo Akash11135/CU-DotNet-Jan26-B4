@@ -1,0 +1,20 @@
+﻿<h2>Market Summary</h2>
+
+<div class="alert alert-info">
+    Market Status: @ViewBag.MarketStatus
+</div>
+
+<div class="card" style="width:18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Top Gainer</h5>
+        <p class="card-text">@ViewData["TopGainer"]</p>
+        <p>Volume: @ViewData["Volume"]</p>
+    </div>
+</div>
+
+
+<h2>Market Analysis</h2>
+
+<p>Ticker: @ViewBag.Ticker</p>
+<p>Days analyzed: @ViewBag.Days</p>
+
