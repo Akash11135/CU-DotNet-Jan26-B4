@@ -1,0 +1,130 @@
+﻿
+@model List<Loan>
+
+
+
+<style>
+    .edit{
+        /* border:1px solid black; */
+        /* padding:1rem; */
+        text-decoration:none;
+        border:1px solid gray;
+        padding:0.25rem;
+        border-radius:5px;
+
+    }
+
+    .edit:hover {
+        border:1px solid blue;        
+    }
+    .delete{
+        /* padding: 1rem; */
+        text-decoration: none;
+        border: 1px solid gray;
+        padding: 0.25rem;
+        border-radius: 5px;
+    }
+   
+    .delete:hover{
+        border:1px solid red;          
+        
+    }
+    .btn{
+        min-width:6rem;
+        padding:0.25rem;
+    }
+
+    .btn:focus,
+    .btn:active,
+    .btn:focus-visible {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+</style>
+<h1>Loan Details</h1>
+<div class= "container">
+    <table class="table ">
+        <thead>
+            <tr>
+                <th>SNo</th>
+                <th>LoanId</th>
+                <th>Borrower Name</th>
+                <th>Lender Name</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                if (Model.Count != 0)
+                {
+
+                    int cnt = 0;
+                    foreach(var i in Model)
+                    {
+                        cnt++;
+                        <tr class="" >
+                            <td>@cnt</td>
+                            <td>@i.LoanId</td>
+                            <td>@i.BorrowerName.ToUpper()</td>
+                            <td>@i.LenderName.ToUpper()</td>
+                            <td>Rs. @i.Amount</td>
+                            <td>
+                                @{
+                                    if (i.IsSettled==true)
+                                    {
+                                        <button class="btn btn-success " style="outline:none">
+                                            Done
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-danger">
+                                            Pending
+                                        </button>
+                                    }
+                                }
+                            </td>
+                            <td >
+                                <a  asp-route-id="@i.LoanId"  asp-action="Edit" class="edit">
+                                    🔍
+                                </a>
+                            </td>
+                            <td>
+                               <a asp-action="Delete"
+                               asp-route-id="@i.LoanId"
+                               class="delete"
+                               onclick="return confirm('Are you sure you want to delete this loan?')">
+                               🗑️
+                            </a>
+                            </td>
+                        </tr>     
+                    }
+                  
+                }
+                else
+                {
+                    <tr>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+
+                    </tr>
+                }
+                
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    @* <a asp-controller="Loan"  asp-action="Add" class="btn btn-outline-primary" style="outline:none">Add Loan</a> *@
+    <a asp-controller="Loan" asp-action="Add" class="btn btn-outline-primary">
+        Add Loan
+    </a>
+</div>
+

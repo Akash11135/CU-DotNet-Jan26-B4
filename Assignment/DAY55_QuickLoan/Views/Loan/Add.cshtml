@@ -1,0 +1,38 @@
+﻿@model Loan
+
+<div class="container">
+
+    <h3>Add Loan</h3>
+
+    <form asp-action="Add" method="post">
+
+        <div class="mb-3">
+            <label asp-for="LoanId"></label>
+            <input asp-for="LoanId" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="BorrowerName"></label>
+            <input asp-for="BorrowerName" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="LenderName"></label>
+            <input asp-for="LenderName" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Amount"></label>
+            <input asp-for="Amount" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="IsSettled"></label>
+            <input asp-for="IsSettled" type="checkbox" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Save</button>
+        <button asp-action="Index" class="btn btn-primary">Back</button>
+    </form>
+
+</div>
