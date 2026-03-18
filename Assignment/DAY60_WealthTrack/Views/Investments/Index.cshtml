@@ -1,0 +1,80 @@
+﻿@model IEnumerable<DAY60_WealthTrack.Models.Investment>
+
+@{
+    ViewData["Title"] = "Investments";
+}
+<style>
+    .form-control:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: #0d6efd;
+    }
+    
+    .form-control {
+        margin-bottom: 1rem;
+    }
+
+
+</style>
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TickerSymbol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssetName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchasePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseDate)
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TickerSymbol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetName)
+            </td>
+            <td>
+                Rs. @Html.DisplayFor(modelItem => item.PurchasePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseDate)
+            </td>
+            <td>
+                Rs. @(item.Quantity*item.PurchasePrice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success">Edit</a> 
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-dark">Details</a> 
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
