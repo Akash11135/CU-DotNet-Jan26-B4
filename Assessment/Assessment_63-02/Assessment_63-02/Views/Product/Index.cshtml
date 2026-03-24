@@ -1,0 +1,33 @@
+﻿@model List<Product>
+@ViewData["Promo"]
+
+<h1>
+    Product Page
+</h1>
+
+<div class="container">
+    <p>Promo Code : @ViewData["Promo"]</p>
+     <table class="table table-hover">
+      <thead class="table-dark">
+          <tr>
+              <th>Name</th>
+               <th>Description</th>
+               <th>Price</th>
+               <th>Final Price</th>
+          </tr>
+      </thead>
+      <tbody>
+            @foreach(var i in Model)
+            {
+                <tr>
+                    <td>@i.Name</td>
+                    <td>@i.Description</td>
+                    <td>@i.Price</td>
+                    <td>@i.FinalPrice</td>
+                </tr>
+            }
+        </tbody>
+</table>
+    
+        <a class="btn btn-outline-success" asp-area="" asp-controller="CheckOut" asp-action="Index">CheckOut</a>
+</div>

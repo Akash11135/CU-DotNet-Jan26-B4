@@ -1,0 +1,33 @@
+﻿@model List<Assessment_63_02.Models.Product>
+
+<h2>Checkout Page</h2>
+
+<p>Promo Code Applied: <b>@ViewBag.Promo</b></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Original Price</th>
+            <th>Final Price</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var item in Model)
+        {
+            @* item.FinalPrice = (item.FinalPrice-0.15*item.FinalPrice)-5; *@
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.FinalPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Total: @ViewBag.Total</h3>
+
+<a class="btn btn-outline-secondary" asp-action="Index" asp-controller="Product">
+    Back
+</a>
