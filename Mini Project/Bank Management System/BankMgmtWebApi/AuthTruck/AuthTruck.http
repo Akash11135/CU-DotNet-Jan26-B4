@@ -1,6 +1,0 @@
-@AuthTruck_HostAddress = http://localhost:5285
-
-GET {{AuthTruck_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
