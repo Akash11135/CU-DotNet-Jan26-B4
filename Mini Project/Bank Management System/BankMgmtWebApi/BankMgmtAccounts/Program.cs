@@ -35,10 +35,10 @@ namespace BankMgmtWebApi
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidIssuer = "BankMgmgWAPIAuth",
-                    ValidAudience = "BankMgmtWebApi",
+                    ValidIssuer = "BankMgmtAuth",
+                    ValidAudience = "BankMgmtAccounts",
                     IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                        Encoding.UTF8.GetBytes("my_super_secret_key_12345678901234567890"))
                 };
             });
             var app = builder.Build();

@@ -30,18 +30,18 @@ namespace BankMgmtTransactions
 
             builder.Services.AddScoped<TransactionServices>();
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-          .AddJwtBearer(options =>
-          {
-              options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-              {
-                  ValidateIssuer = true,
-                  ValidateAudience = true,
-                  ValidIssuer = "BankMgmtWAPIAuth",
-                  ValidAudience = "BankMgmtTransactions",
-                  IssuerSigningKey = new SymmetricSecurityKey(
-                      Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-              };
-          });
+               .AddJwtBearer(options =>
+               {
+                   options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                   {
+                       ValidateIssuer = true,
+                       ValidateAudience = true,
+                       ValidIssuer = "BankMgmtAuth",
+                       ValidAudience = "BankMgmtAPI",
+                       IssuerSigningKey = new SymmetricSecurityKey(
+                           Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                   };
+               });
 
             var app = builder.Build();
 
