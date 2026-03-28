@@ -1,0 +1,6 @@
+@TruckUsers_HostAddress = http://localhost:5117
+
+GET {{TruckUsers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
