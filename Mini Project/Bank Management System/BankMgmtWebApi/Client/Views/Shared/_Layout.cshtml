@@ -12,6 +12,9 @@
 <style>
     
 </style>
+@{
+    var token = Context.Request.Cookies["jwt"];
+}
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow ">
@@ -26,12 +29,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Login">Login</a>
-                        </li>
+                        @{
+                            if (string.IsNullOrWhiteSpace(token))
+                            {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Login">Login</a>
+                            </li>
+
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Logout">Logout</a>
+                                </li>
+                            }
+                        }
                     </ul>
                 </div>
             </div>

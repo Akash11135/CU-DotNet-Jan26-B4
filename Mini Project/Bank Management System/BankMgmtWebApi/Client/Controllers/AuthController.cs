@@ -25,7 +25,14 @@ namespace Client.Controllers
             var token = await _auth.Login(dto);
             Response.Cookies.Append("jwt", token);
 
-            return RedirectToAction("Account");
+            return Redirect("/Account/GetAll");
+        }
+
+        
+        public IActionResult Logout()
+        {
+            Response.Cookies.Delete("jwt");
+            return RedirectToAction("Login","Auth");
         }
     }
 }

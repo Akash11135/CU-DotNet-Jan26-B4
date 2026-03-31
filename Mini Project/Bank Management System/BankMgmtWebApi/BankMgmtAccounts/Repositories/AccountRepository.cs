@@ -1,5 +1,6 @@
 using BankMgmtWebApi.Data;
 using BankMgmtWebApi.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -19,12 +20,12 @@ namespace BankMgmtWebApi.Repositories
             return allAccounts;
         }
 
-        
+
         public async Task<Account> GetByIdAsync(int Id)
         {
-           
 
-            var accountById = await _context.Accounts.FirstOrDefaultAsync(a=>a.Id==Id);
+
+            var accountById = await _context.Accounts.FirstOrDefaultAsync(a => a.Id == Id);
 
             if (accountById == null)
             {
@@ -34,7 +35,7 @@ namespace BankMgmtWebApi.Repositories
             return accountById;
         }
 
-        
+
         public async Task AddAsync(Account account)
         {
             await _context.Accounts.AddAsync(account);
@@ -45,11 +46,25 @@ namespace BankMgmtWebApi.Repositories
             await _context.SaveChangesAsync();
         }
 
-        //public async Task DeleteAsync(int Id)
-        //{
-        //    var objToRemove = await _context.Accounts.FirstOrDefaultAsync(a => a.Id == Id);
-        //    if(objToRemove==null)return 
-        //    return await _context.Remove();
-        //}
+        public async Task<Account> EditAsync(Account account)
+        {
+            var exist = await GetByIdAsync(account.Id);
+            if (exist == null)
+            {
+                return null;
+            }
+            _context.Entry(exist).CurrentValues.SetValues(exist);
+            await _context.SaveChangesAsync();
+            return exist;
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var exist = await GetByIdAsync(id);
+
+            _context.Accounts.Remove(exist);
+            await _context.SaveChangesAsync();
+
+        }
     }
 }

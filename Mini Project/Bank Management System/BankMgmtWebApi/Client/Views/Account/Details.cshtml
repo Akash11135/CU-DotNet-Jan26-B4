@@ -1,0 +1,42 @@
+﻿@model Client.DTOs.AccountDto;
+
+
+<style>
+    .containerBox{
+        margin-top:2rem;
+        border: 1px solid black;
+        background-color:lightgray;
+        padding:1rem;
+        border-radius:5px;
+        
+    }
+</style>
+
+<div class="container">
+    <h1>Account Details Page</h1>
+
+    <div class="containerBox">
+        <h2>Welcome👋, @Model.Name</h2>
+        <div>
+            <label class="form-label fw-bold">Id : </label>
+            <span>@Model.Id</span>
+        </div>
+        <div class="">
+            <label class="form-label fw-bold">Name : </label>
+            <span>@Model.Name</span>
+        </div>
+        <div>
+            <label class="form-label fw-bold">Account Number : </label>
+            <span>@Model.AccountNumber</span>
+        </div>
+        <div>
+            <label class="form-label fw-bold">Current Balance: </label>
+            <span>Rs. @Model.Balance</span>
+        </div>
+        <div>
+            <a class="btn btn-success p-1 mt-1 ">Edit</a>
+            <a asp-action="GetAll" asp-controller="Account" class="btn btn-dark p-1 mt-1 ">Back</a>
+        </div>
+    </div>   
+    
+</div>

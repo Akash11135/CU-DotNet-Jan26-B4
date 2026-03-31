@@ -9,5 +9,6 @@ namespace BankMgmtTransactions.Repository
         public Task<List<Transaction>> GetAllAsync();
         public Task AddAsync(Transaction transaction);
         public Task SaveAsync();
+        public Task<List<Transaction>> GetAllByAccount(int id);
     }
 }

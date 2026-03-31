@@ -9,5 +9,7 @@ namespace BankMgmtWebApi.Services
         Task<AccountDto> GetById(int id);
         Task Deposit(TransactionDto dto);
         Task Withdraw(TransactionDto dto);
+        Task<AccountDto> EditAccount(AccountDto account);
+        Task DeleteAccount(int id);
     }
 }

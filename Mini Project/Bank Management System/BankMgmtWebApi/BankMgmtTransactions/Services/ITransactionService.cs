@@ -8,5 +8,6 @@ namespace BankMgmtTransactions.Services
         Task<List<CreateTransactionDto>> GetAllTransaction();
         Task<CreateTransactionDto> GetTransactionById(int id);
 
+        Task<List<CreateTransactionDto>> GetTransactionForAccount(int id);
     }
 }

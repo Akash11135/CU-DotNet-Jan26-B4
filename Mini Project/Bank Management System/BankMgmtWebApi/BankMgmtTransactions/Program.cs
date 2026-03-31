@@ -27,6 +27,10 @@ namespace BankMgmtTransactions
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddControllers()
+    .AddXmlSerializerFormatters();
+
+            builder.Services.AddHttpClient();
 
             builder.Services.AddScoped<TransactionServices>();
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -37,7 +41,7 @@ namespace BankMgmtTransactions
                        ValidateIssuer = true,
                        ValidateAudience = true,
                        ValidIssuer = "BankMgmtAuth",
-                       ValidAudience = "BankMgmtAPI",
+                       ValidAudience = "BankMgmtAccounts",
                        IssuerSigningKey = new SymmetricSecurityKey(
                            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
                    };

@@ -37,5 +37,12 @@ namespace BankMgmtTransactions.Controllers
             var res = await _services.GetTransactionById(id);
             return Ok(new { transaction = res });
         }
+
+        [HttpGet("getallbyaccount/{id}")]
+        public async Task<IActionResult> GetAllTransactionsByAccount(int id)
+        {
+            var result = await _services.GetTransactionForAccount(id);
+            return Ok(new { transaction = result });
+        }
     }
 }

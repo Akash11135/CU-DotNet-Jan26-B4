@@ -15,9 +15,9 @@ namespace Client
 
             // Register services
             builder.Services.AddHttpClient<AuthService>();
-            //builder.Services.AddHttpClient<AccountService>();
-
+            builder.Services.AddHttpClient<AccountService>();
             builder.Services.AddHttpContextAccessor();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -8,7 +8,7 @@ namespace BankMgmtWAPIAuth.Controllers
     using System.Threading.Tasks;
 
     [ApiController]
-    [Route("api/auth")]
+    [Route("auth")]
     public class AuthController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;

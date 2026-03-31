@@ -1,8 +1,139 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    /* HERO SECTION WITH BACKGROUND */
+    .hero {
+        position: relative;
+        background: url('/images/bank-bg.jpg') center/cover no-repeat;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+        /* DARK OVERLAY */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* BUTTON STYLE */
+    .hero .btn {
+        min-width: 140px;
+        border-radius: 30px;
+    }
+
+    /* SECTION SPACING */
+    .section {
+        padding: 80px 0;
+    }
+
+    /* CARDS */
+    .feature-card {
+        border: none;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+    /* LIGHT BACKGROUND SECTION */
+    .bg-light-soft {
+        background-color: #f8f9fc;
+    }
+</style>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold">Welcome to SmartBank</h1>
+        <p class="lead mb-4">Secure • Fast • Reliable Banking Management System</p>
+
+        <a asp-action="Login" asp-controller="Auth" class="btn btn-light btn-lg mx-2">Login</a>
+        <a asp-action="Register" asp-controller="Auth"  class="btn btn-outline-light btn-lg mx-2">Register</a>
+        <a asp-action="GetAll" asp-controller="Account" class="btn btn-warning btn-lg mx-2">Accounts</a>
+    </div>
 </div>
+
+<!-- FEATURES -->
+<div class="section bg-light-soft">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">What We Offer</h2>
+        <p class="text-muted mb-5">
+            A complete banking management solution built with ASP.NET MVC
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Account -->
+            <div class="col-md-4">
+                <div class="card feature-card shadow-sm h-100 p-4">
+                    <h4 class="mt-2">Account Management</h4>
+                    <p class="text-muted">
+                        Create and manage customer accounts, update details,
+                        and maintain secure profiles.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Transaction -->
+            <div class="col-md-4">
+                <div class="card feature-card shadow-sm h-100 p-4">
+                    <h4 class="mt-2">Transaction Management</h4>
+                    <p class="text-muted">
+                        Deposit, withdraw, transfer money and track full
+                        transaction history easily.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Loan -->
+            <div class="col-md-4">
+                <div class="card feature-card shadow-sm h-100 p-4">
+                    <h4 class="mt-2">Loan Management</h4>
+                    <p class="text-muted">
+                        Apply for loans, track approvals and manage repayments
+                        with efficiency.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="section text-center">
+    <div class="container">
+        <h3 class="fw-bold">Start Managing Your Finances Today</h3>
+        <p class="text-muted mb-4">
+            Join our platform and experience modern banking.
+        </p>
+        <a href="/Account/Register" class="btn btn-primary btn-lg px-4">
+            Get Started
+        </a>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; @DateTime.Now.Year SmartBank</p>
+</footer>

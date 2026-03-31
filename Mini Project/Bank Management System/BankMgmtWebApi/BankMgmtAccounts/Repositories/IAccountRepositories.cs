@@ -9,5 +9,9 @@ namespace BankMgmtWebApi.Repositories
         public Task<List<Account>> GetAllAsync();
         public Task AddAsync(Account account);
         public Task SaveAsync();
+
+        public Task<Account> EditAsync(Account account);
+
+        public Task DeleteAsync(int id);
     }
 }

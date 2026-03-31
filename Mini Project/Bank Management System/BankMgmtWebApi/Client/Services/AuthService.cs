@@ -13,7 +13,7 @@ namespace Client.Services
 
         public async Task<string> Login(LoginDto dto)
         {
-            var response = await _http.PostAsJsonAsync("http://localhost:7002/api/auth/login", dto);
+            var response = await _http.PostAsJsonAsync("http://localhost:7001/auth/login", dto);
 
             if (!response.IsSuccessStatusCode)
             {

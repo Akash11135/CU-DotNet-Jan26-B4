@@ -99,5 +99,41 @@ namespace BankMgmtWebApi.Services
 
             await _repo.SaveAsync();
         }
+    
+        public async Task<AccountDto> EditAccount(AccountDto account)
+        {
+            var editAccount = new Account
+            {
+                Name = account.Name,
+                Balance = account.Balance,
+            };
+            var resp = await _repo.EditAsync(editAccount);
+
+            if (resp == null)
+            {
+                throw new Exception("Account not found.");
+            }
+
+            var result = new AccountDto
+            {
+                AccountNumber = resp.AccountNumber,
+                Balance = resp.Balance,
+                Id = resp.Id,
+                Name = resp.Name,
+            };
+
+            return result;
+        }
+        
+        public async Task DeleteAccount(int id)
+        {
+            var exist = await GetById(id);
+            if (exist == null)
+            {
+                throw new Exception("Account not found.");
+            }
+            await _repo.DeleteAsync(id);
+            return;
+        }
     }
 }

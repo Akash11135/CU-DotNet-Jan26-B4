@@ -2,6 +2,7 @@ using BankMgmtWebApi.DTOs;
 using BankMgmtWebApi.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace BankMgmtWebApi.Controllers
 {
@@ -28,7 +29,11 @@ namespace BankMgmtWebApi.Controllers
         [HttpGet("getall")]
         public async Task<IActionResult> GetAll()
         {
-            
+            var resp = await _service.GetAll();
+            if (resp.IsNullOrEmpty())
+            {
+                throw new Exception("Unable to fetch accounts.");
+            }
             return Ok(await _service.GetAll());
         }
 

@@ -35,5 +35,11 @@ namespace BankMgmtTransactions.Repository
         {
             await _context.SaveChangesAsync();
         }
+
+        public async Task<List<Transaction>> GetAllByAccount(int id) 
+        {
+            var result = await _context.Transactions.Where(t => t.AccountId == id).ToListAsync();
+            return result;
+        }
     }
 }
