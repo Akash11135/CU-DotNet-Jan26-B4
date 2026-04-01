@@ -1,0 +1,38 @@
+﻿@model Client.DTOs.AccountDto
+
+<div class="container">
+    <h1>Edit Profile : @Model.Name</h1>
+
+    <form method="post">
+
+        <!-- Hidden ID (important) -->
+        <input type="hidden" asp-for="Id" />
+
+        <div>
+            <label asp-for="Id" class="form-label"></label>
+            <input asp-for="Id" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label asp-for="AccountNumber" class="form-label"></label>
+            <input asp-for="AccountNumber" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Balance" class="form-label"></label>
+            <input asp-for="Balance" class="form-control" />
+            <span asp-validation-for="Balance" class="text-danger"></span>
+        </div>
+
+        <!-- ✅ Button INSIDE form -->
+        <button class="btn btn-success mt-2" type="submit">Edit</button>
+        <a asp-action="GetAll" class="btn btn-dark mt-2">Back</a>
+
+    </form>
+</div>

@@ -47,7 +47,7 @@
                         <a class="btn btn-outline-light ">Deposite</a>
                     </td>
                     <td>
-                        <a asp-action="" class="btn btn-outline-secondary p-1 m-1">Edit</a>
+                        <a asp-action="Edit" asp-controller="Account" asp-route-id=@account.Id class="btn btn-outline-secondary p-1 m-1">Edit</a>
                         <a asp-action="Details" asp-controller="Account" asp-route-id=@account.Id class="btn btn-outline-info p-1 m-1">Details</a>
                         <a class="btn btn-outline-danger p-1 m-1">Delete</a>
                     </td>

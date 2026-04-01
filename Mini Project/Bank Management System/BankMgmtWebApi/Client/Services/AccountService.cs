@@ -1,5 +1,6 @@
 ﻿using Client.DTOs;
 using Microsoft.AspNetCore.Http.HttpResults;
+using System.Security.Principal;
 
 namespace Client.Services
 {
@@ -67,6 +68,36 @@ namespace Client.Services
             var result = await resp.Content.ReadFromJsonAsync<AccountDto>();
 
             return result;
+        }
+
+        public async Task<AccountDto> EditAsync(AccountDto account)
+        {
+            var token = _con.HttpContext.Request.Cookies["jwt"];
+
+            _http.DefaultRequestHeaders.Authorization =
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var resp = await _http.PostAsJsonAsync("http://localhost:7002/accounts/edit", account);
+
+            var result = await resp.Content.ReadFromJsonAsync<AccountDto>();
+
+            return result;
+        }
+
+        public async Task<string> DeleteAsync(int id) 
+        {
+            var token = _con.HttpContext.Request.Cookies["jwt"];
+
+            _http.DefaultRequestHeaders.Authorization =
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var resp = await _http.GetAsync($"http://localhost:7002/accounts/delete/{id}");
+
+            if (resp.IsSuccessStatusCode)
+            {
+                return "deleted Successfully";
+            }
+            return "";
         }
     }
 }

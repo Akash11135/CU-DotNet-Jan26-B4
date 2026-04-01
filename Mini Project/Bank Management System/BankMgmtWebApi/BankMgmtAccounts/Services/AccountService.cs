@@ -104,9 +104,12 @@ namespace BankMgmtWebApi.Services
         {
             var editAccount = new Account
             {
+                Id= account.Id,
+                AccountNumber= account.AccountNumber,
                 Name = account.Name,
                 Balance = account.Balance,
             };
+
             var resp = await _repo.EditAsync(editAccount);
 
             if (resp == null)
@@ -116,10 +119,10 @@ namespace BankMgmtWebApi.Services
 
             var result = new AccountDto
             {
-                AccountNumber = resp.AccountNumber,
-                Balance = resp.Balance,
                 Id = resp.Id,
                 Name = resp.Name,
+                AccountNumber = resp.AccountNumber,
+                Balance = resp.Balance
             };
 
             return result;

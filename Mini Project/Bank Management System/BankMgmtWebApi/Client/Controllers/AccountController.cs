@@ -33,7 +33,7 @@ namespace Client.Controllers
             return View(res);
          }
 
-        [HttpGet("{id}")]
+        [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
             var res = await _service.GetByIdAsync(id);
@@ -57,18 +57,30 @@ namespace Client.Controllers
             return RedirectToAction("GetAll");
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var account = await _service.GetByIdAsync(id);
+            if(account == null)
+            {
+                throw new Exception("Unable to edit. Get");
+            }
 
-        //public IActionResult Details()
-        //{
+            return View(account);
+        }
 
-        //}
-        //public IActionResult Edit()
-        //{
+        [HttpPost]
+        public async Task<IActionResult> Edit(AccountDto account)
+        {
+            var res = await _service.EditAsync(account);
+            if (res == null)
+            {
+                throw new Exception("Unable to edit. Post");
+            }
+            return View(res);
+        }
 
-        //}
-        //public IActionResult Delete()
-        //{
-
-        //}
+        
+        
     }
 }

@@ -1,4 +1,4 @@
-using BankMgmtWebApi.Data;
+﻿using BankMgmtWebApi.Data;
 using BankMgmtWebApi.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
@@ -49,13 +49,17 @@ namespace BankMgmtWebApi.Repositories
         public async Task<Account> EditAsync(Account account)
         {
             var exist = await GetByIdAsync(account.Id);
+
             if (exist == null)
             {
                 return null;
             }
-            _context.Entry(exist).CurrentValues.SetValues(exist);
+            _context.Entry(exist).CurrentValues.SetValues(account);
+
             await _context.SaveChangesAsync();
-            return exist;
+
+            var res =await _context.Accounts.FirstOrDefaultAsync(a=>a.Id == account.Id);
+            return res;
         }
 
         public async Task DeleteAsync(int id)

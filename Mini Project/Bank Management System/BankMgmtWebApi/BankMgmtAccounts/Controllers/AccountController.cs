@@ -61,11 +61,26 @@ namespace BankMgmtWebApi.Controllers
 
             return Ok(new { mess = $"successfully withdrawn.Current Balance {updated.Balance}" });
         }
+        
+        [HttpPut("edit")]
+        public async Task<IActionResult> Edit(int id, AccountDto account)
+        {
+            
+            var resp = await _service.EditAccount(account);
 
-        //[HttpPost("delete/{id}")]
-        //public async Task<IActionResult> DeleteById(int id)   
-        //{
-        //    await _service
-        //}
+            if (resp == null)
+            {
+                return BadRequest("Unable to edit");
+            }
+
+            return Ok(resp);
+        }
+
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _service.DeleteAccount(id);
+            return Ok(new { mess = "deleted successfully" });
+;        }
     }
 }
