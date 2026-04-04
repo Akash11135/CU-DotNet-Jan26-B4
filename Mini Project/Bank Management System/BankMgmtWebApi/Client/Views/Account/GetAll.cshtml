@@ -8,8 +8,8 @@
 }
 
 
-<div class="container">
-<h1>Accounts</h1>
+<div class="page-box">
+<h1 class="page-title">Accounts</h1>
     <div class="mb-2">
         <a class="btn btn-dark" asp-controller="Account" asp-action="Create">Create Account</a>
     </div>
@@ -40,16 +40,16 @@
                     <td>Rs. @account.Balance</td>
                     <td>@account.Id</td>
                     <td>
-                        <a class="btn btn-success">Transactions</a>
+                        <a class="btn btn-success" asp-controller="Transaction" asp-action="GetAllTransactions" asp-route-id=@account.Id>Transactions</a>
                     </td>
                     <td>
-                        <a class="btn btn-outline-primary">Withdraw</a>
-                        <a class="btn btn-outline-light ">Deposite</a>
+                       <a class="btn btn-light" asp-controller="Transaction" asp-action="Create" asp-route-id=@account.Id>+ New Transaction</a>
                     </td>
                     <td>
                         <a asp-action="Edit" asp-controller="Account" asp-route-id=@account.Id class="btn btn-outline-secondary p-1 m-1">Edit</a>
                         <a asp-action="Details" asp-controller="Account" asp-route-id=@account.Id class="btn btn-outline-info p-1 m-1">Details</a>
-                        <a class="btn btn-outline-danger p-1 m-1">Delete</a>
+                        <a class="btn btn-outline-danger p-1 m-1" asp-action="Delete" asp-route-id=@account.Id
+                        >Delete</a>
                     </td>
                 </tr>
                 cnt++;  

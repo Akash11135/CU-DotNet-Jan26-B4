@@ -77,10 +77,26 @@ namespace Client.Controllers
             {
                 throw new Exception("Unable to edit. Post");
             }
-            return View(res);
+            return RedirectToAction("GetAll");
         }
 
-        
-        
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var exist = await _service.GetByIdAsync(id);
+            if(exist == null)
+            {
+                throw new Exception("Unable to get user for deletion (FE).");
+            }
+            return View(exist);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var resp = await _service.DeleteAsync(id);
+            return RedirectToAction("GetAll");
+        }
+
     }
 }

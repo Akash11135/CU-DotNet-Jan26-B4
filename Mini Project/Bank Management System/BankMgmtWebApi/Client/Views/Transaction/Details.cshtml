@@ -1,0 +1,65 @@
+﻿@model Client.DTOs.TransactionByIdDto
+
+<style>
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+        width:40%;
+        margin:auto;    
+        padding:1rem;
+        border-radius:5px;
+    }
+
+    .detail-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255, 0.4);
+        border-radius:5px;
+        align-items:center;
+    }
+
+    .detail-value {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .btn-container {
+        margin-top: 20px;
+        text-align: right;
+    }
+</style>
+<div class="page-box">
+    <h1 class="page-title">Transaction Details</h1>
+
+    <div class="details-container">
+
+        <div class="detail-row">
+            <label asp-for="TransactionId" class="form-label"></label>
+            <span class="detail-value">@Model.TransactionId</span>
+        </div>
+
+        <div class="detail-row">
+            <label asp-for="AccountId" class="form-label"></label>
+            <span class="detail-value">@Model.AccountId</span>
+        </div>
+
+        <div class="detail-row">
+            <label asp-for="TransactionType" class="form-label"></label>
+            <span class="detail-value">@Model.TransactionType</span>
+        </div>
+
+        <div class="detail-row">
+            <label asp-for="Amount" class="form-label"></label>
+            <span class="detail-value">₹ @Model.Amount</span>
+        </div>
+
+    </div>
+
+    <div class="btn-container">
+        <a asp-action="GetAll" asp-controller="Account" class="btn btn-dark">Back</a>
+    </div>
+   
+</div>

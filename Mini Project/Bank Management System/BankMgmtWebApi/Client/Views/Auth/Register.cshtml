@@ -1,0 +1,101 @@
+﻿@model Client.DTOs.RegistrationDto
+
+<style>
+    .reg-title{
+        text-align:center;
+        width:100%;
+        /* padding:1rem; */
+    }
+
+    .reg-container{
+        display:flex;
+        margin:50px;
+        align-items:center;
+        justify-content:center;
+        padding:2rem;
+    }
+
+    .manageRadio {
+        /* border: 1px solid #ddd; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 6px;
+    }
+
+    .reg-form-container{
+        border:1px solid whitesmoke;
+        border-radius:5px;
+        padding:1rem;
+        min-width:60%;
+        background: rgb(245, 245, 245, 0.3);
+    }
+
+</style>
+<div class="reg-container">
+    <div class="reg-form-container">
+        <h5 class="">SmartBank 🏦</h5>
+        <h1 class="reg-title">Register</h1>
+        <p>Get started under 2 minutes.</p>
+        <form class="reg-form" method="post">
+            <div class="form-feilds">
+                <label asp-for=FullName class="form-label" ></label>
+                <input asp-for="FullName" class="form-control" type="text" id="name"/>
+                <span class="text-danger" asp-validation-for="FullName"></span>
+            </div>
+            <div class="form-feilds">
+                <label asp-for=Email class="form-label"></label>
+                <input asp-for="Email" class="form-control" type="email"id="email"/>
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="form-feilds">
+                <label asp-for=Password class="form-label"></label>
+                <input asp-for="Password" class="form-control" type="password" id="password"/>
+                <span class="text-danger" asp-validation-for="FullName"></span>
+            </div>
+            <div class="form-feilds">
+                <label asp-for="Role" class="form-label"></label>
+
+                <div class="manageRadio">
+                    <label class="manageInputs">
+                        <input asp-for="Role" type="radio" value="Admin" id="role"/>
+                        Admin
+                    </label>
+
+                    <label class="manageInputs">
+                        <input asp-for="Role" type="radio" value="Customer" id="role" />
+                        Customer
+                    </label>
+                </div>
+
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+
+            <div class="">
+                <button type="submit" class="btn btn-dark">Register</button>
+                <button type="button" onclick="reset()" class="btn btn-secondary">Reset</button>
+            </div>
+
+            <p style="text-align:center">Already Have an Account?<a class="link link-dark" asp-action="Login" asp-controller="Auth"> Click to Login</a></p>
+        </form>
+
+    </div>
+</div>
+
+<script>
+    function reset(){
+        var fullName = document.getElementById("name");
+        var email   = document.getElementById("email");
+        var password = document.getElementById("password");
+        var role = document.getElementById("role");
+        fullName.value = "";
+        email.value = "";
+        password.value = "";
+        role.value="";
+    }
+</script>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

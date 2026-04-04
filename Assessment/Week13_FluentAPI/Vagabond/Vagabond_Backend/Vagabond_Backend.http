@@ -1,0 +1,6 @@
+@Vagabond_Backend_HostAddress = http://localhost:5113
+
+GET {{Vagabond_Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

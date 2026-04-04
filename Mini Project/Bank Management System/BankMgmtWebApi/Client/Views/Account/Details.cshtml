@@ -4,18 +4,18 @@
 <style>
     .containerBox{
         margin-top:2rem;
-        border: 1px solid black;
+        border: 1px solid lightgray;
         background-color:lightgray;
         padding:1rem;
-        border-radius:5px;
+        border-radius:3px;
         
     }
 </style>
 
-<div class="container">
-    <h1>Account Details Page</h1>
+<div class="page-box">
+    <h1 class="page-title">Account Details Page</h1>
 
-    <div class="containerBox">
+    <div class="">
         <h2>Welcome👋, @Model.Name</h2>
         <div>
             <label class="form-label fw-bold">Id : </label>
@@ -34,7 +34,7 @@
             <span>Rs. @Model.Balance</span>
         </div>
         <div>
-            <a class="btn btn-success p-1 mt-1 ">Edit</a>
+            <a class="btn btn-success p-1 mt-1 " asp-action="Edit" asp-controller="Account" asp-route-id=@Model.Id>Edit</a>
             <a asp-action="GetAll" asp-controller="Account" class="btn btn-dark p-1 mt-1 ">Back</a>
         </div>
     </div>   

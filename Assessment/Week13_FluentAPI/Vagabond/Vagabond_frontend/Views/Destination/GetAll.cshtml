@@ -1,0 +1,93 @@
+﻿@model List<Vagabond_frontend.DTOs.DestinationDto>
+
+    <style>
+
+                .table-hover tbody tr:hover {
+            background-color: #f8f9fa;
+          
+        }
+
+        .card {
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+
+
+
+<div class="container mt-4">
+    <div class="card shadow-lg border-0 rounded-4">
+    
+        <div class="card-header bg-dark text-white rounded-top-4 d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">🌍 All Destinations</h4>
+            <span class="badge bg-info text-dark">@Model.Count Places</span>
+        </div>
+
+      
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    
+                    <thead class="table-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Country</th>
+                            <th>City</th>
+                            <th>Description</th>
+                            <th>Rating</th>
+                            <th>Last Visited</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @{
+                            int cnt = 1;
+                        }
+
+                        @foreach (var dest in Model)
+                        {
+                            <tr>
+                                <td class="fw-bold">@cnt</td>
+
+                                <td>
+                                    <span class="fw-semibold text-primary">
+                                        @dest.Country
+                                    </span>
+                                </td>
+
+                                <td>@dest.CityName</td>
+
+                                <td class="text-muted" style="max-width: 250px;">
+                                    @(string.IsNullOrEmpty(dest.Description) 
+                                        ? "—" 
+                                        : dest.Description.Length > 60 
+                                            ? dest.Description.Substring(0, 60) + "..." 
+                                            : dest.Description)
+                                </td>
+
+                                <td>
+                                    <span class="badge bg-warning text-dark">
+                                        ⭐ @dest.Rating / 5
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <small class="text-muted">
+                                        @dest.LastVisited.ToString("dd MMM yyyy")
+                                    </small>
+                                </td>
+                            </tr>
+
+                            cnt++;
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

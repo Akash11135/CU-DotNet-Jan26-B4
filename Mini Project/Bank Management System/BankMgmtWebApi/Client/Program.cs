@@ -16,6 +16,7 @@ namespace Client
             // Register services
             builder.Services.AddHttpClient<AuthService>();
             builder.Services.AddHttpClient<AccountService>();
+            builder.Services.AddHttpClient<ITransactionService ,TransactionService>();
             builder.Services.AddHttpContextAccessor();
 
             var app = builder.Build();

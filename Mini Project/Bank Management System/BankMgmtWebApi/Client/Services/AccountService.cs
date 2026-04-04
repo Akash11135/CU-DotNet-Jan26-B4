@@ -1,6 +1,8 @@
 ﻿using Client.DTOs;
 using Microsoft.AspNetCore.Http.HttpResults;
 using System.Security.Principal;
+using System.Text.Json;
+using System.Net.Http.Headers;
 
 namespace Client.Services
 {
@@ -20,7 +22,7 @@ namespace Client.Services
             var token = _con.HttpContext.Request.Cookies["jwt"];
 
             //add header
-            _http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var res = await _http.GetFromJsonAsync<List<AccountDto>>("http://localhost:7002/accounts/getall");
 
@@ -37,7 +39,7 @@ namespace Client.Services
             var token = _con.HttpContext.Request.Cookies["jwt"];
 
             //add header
-            _http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var res = await _http.GetFromJsonAsync<AccountDto>($"http://localhost:7002/accounts/{id}");
 
@@ -54,7 +56,7 @@ namespace Client.Services
             var token = _con.HttpContext.Request.Cookies["jwt"];
 
             _http.DefaultRequestHeaders.Authorization =
-                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+                new AuthenticationHeaderValue("Bearer", token);
 
             var resp = await _http.PostAsJsonAsync("http://localhost:7002/accounts", account);
 
@@ -74,12 +76,33 @@ namespace Client.Services
         {
             var token = _con.HttpContext.Request.Cookies["jwt"];
 
+            if (string.IsNullOrEmpty(token))
+                throw new Exception("JWT token missing");
+
             _http.DefaultRequestHeaders.Authorization =
-                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+                new AuthenticationHeaderValue("Bearer", token);
 
-            var resp = await _http.PostAsJsonAsync("http://localhost:7002/accounts/edit", account);
+            var resp = await _http.PutAsJsonAsync("http://localhost:7002/accounts/edit", account);
 
-            var result = await resp.Content.ReadFromJsonAsync<AccountDto>();
+            //CHECK STATUS FIRST
+            if (!resp.IsSuccessStatusCode)
+            {
+                var error = await resp.Content.ReadAsStringAsync();
+                throw new Exception($"API Error: {resp.StatusCode} - {error}");
+            }
+
+            //DEBUG RAW RESPONSE
+            var raw = await resp.Content.ReadAsStringAsync();
+
+            if (string.IsNullOrWhiteSpace(raw))
+            {
+                return account;
+            }
+
+            var result = JsonSerializer.Deserialize<AccountDto>(raw, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
 
             return result;
         }
@@ -88,16 +111,28 @@ namespace Client.Services
         {
             var token = _con.HttpContext.Request.Cookies["jwt"];
 
-            _http.DefaultRequestHeaders.Authorization =
-                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            if (string.IsNullOrEmpty(token))
+            {
+                throw new Exception("Token value is null/empty.");
+            }
 
-            var resp = await _http.GetAsync($"http://localhost:7002/accounts/delete/{id}");
+            _http.DefaultRequestHeaders.Authorization =
+                new AuthenticationHeaderValue("Bearer", token);
+
+            var resp = await _http.DeleteAsync($"http://localhost:7002/accounts/delete/{id}");
+
+            if (!resp.IsSuccessStatusCode)
+            {
+                var error = await resp.Content.ReadAsStringAsync();
+                throw new Exception($"Error -> {error}, status code-->{resp.StatusCode}");
+            }
 
             if (resp.IsSuccessStatusCode)
             {
                 return "deleted Successfully";
             }
-            return "";
+
+            return "error in deletion";
         }
     }
 }

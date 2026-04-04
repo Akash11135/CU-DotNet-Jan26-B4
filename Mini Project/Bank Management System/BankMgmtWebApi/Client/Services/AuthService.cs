@@ -28,5 +28,23 @@ namespace Client.Services
 
             return result.token;
         }
+
+        public async Task<RegistrationDto> Register(RegistrationDto dto)
+        {
+            var resp =await _http.PostAsJsonAsync<RegistrationDto>("http://localhost:7001/auth/register", dto);
+
+            if (!resp.IsSuccessStatusCode)
+            {
+                var error = await resp.Content.ReadAsStringAsync();
+                throw new Exception($"Regstration FE API Error: {error}");
+            }
+
+            var result = await resp.Content.ReadFromJsonAsync<RegistrationDto>();
+            if (result == null)
+            {
+                throw new Exception("Registration is null");
+            }
+            return result;
+        }
     }
 }

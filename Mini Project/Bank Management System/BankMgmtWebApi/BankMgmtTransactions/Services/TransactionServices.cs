@@ -11,10 +11,12 @@ namespace BankMgmtTransactions.Services
     {
         private readonly ITransactionRepo _repo;
         private readonly HttpClient _http;
-        public TransactionServices(ITransactionRepo repo , HttpClient http)
-        {
+        private readonly IHttpContextAccessor _con;
+        public TransactionServices(ITransactionRepo repo , HttpClient http , IHttpContextAccessor con)
+        {   
             _repo = repo;
             _http = http;
+            _con = con;
         }
 
         public async Task<CreateTransactionDto> Createtransaction(CreateTransactionDto dto)
@@ -31,11 +33,25 @@ namespace BankMgmtTransactions.Services
             await _repo.AddAsync(transaction);
             await _repo.SaveAsync();
 
+
             var reqBody = new
             {
                 accountId = dto.AccountId,
                 amount = dto.Amount,
+                transactionType = dto.TransactionType,
+          
             };
+
+            var token = _con.HttpContext.Request.Headers["Authorization"]
+                .ToString()
+                .Replace("Bearer ", "");
+
+            if (string.IsNullOrEmpty(token)) {
+                throw new Exception("in backend token is null while sending the token for deposite/withdraw account.");
+            }
+
+            _http.DefaultRequestHeaders.Authorization =
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
             var content = new StringContent(
                 JsonSerializer.Serialize(reqBody),
@@ -43,6 +59,7 @@ namespace BankMgmtTransactions.Services
                 "application/json"
             );
 
+            
             if (dto.TransactionType.ToLower() == "deposit")
             {
                 var response = await _http.PostAsync(
@@ -67,6 +84,7 @@ namespace BankMgmtTransactions.Services
             
             return new CreateTransactionDto
             {
+                TransactionId = dto.TransactionId,
                 Amount = dto.Amount,
                 TransactionType = dto.TransactionType,
                 AccountId = dto.AccountId,
@@ -77,22 +95,26 @@ namespace BankMgmtTransactions.Services
             var allTrans = await _repo.GetAllAsync();
             return allTrans.Select(a => new CreateTransactionDto
             {
+                TransactionId = a.Id,
                 Amount = a.Amount,
                 TransactionType = a.TransactionType,
                 AccountId = a.AccountId,
-
-
             }).ToList();
         }
 
         public async Task<CreateTransactionDto> GetTransactionById(int id)
         {
+
             var transaction = await _repo.GetByIdAsync(id);
+            if (transaction == null)
+                throw new Exception("Transaction is null");
+
             return new CreateTransactionDto
             {
-                Amount = transaction.Amount,
-                TransactionType = transaction.TransactionType,
+                TransactionId = transaction.Id,
                 AccountId = transaction.AccountId,
+                Amount = transaction.Amount,
+                TransactionType = transaction.TransactionType
             };
         }
 
@@ -102,6 +124,7 @@ namespace BankMgmtTransactions.Services
 
             return transactions.Select(a => new CreateTransactionDto 
             {
+                TransactionId = a.Id,
                 Amount = a.Amount,
                 TransactionType = a.TransactionType,
                 AccountId = a.AccountId,

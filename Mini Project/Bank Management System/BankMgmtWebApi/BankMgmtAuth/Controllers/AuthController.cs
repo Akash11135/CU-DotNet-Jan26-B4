@@ -38,8 +38,15 @@ namespace BankMgmtWAPIAuth.Controllers
 
             // Assign role
             await _userManager.AddToRoleAsync(user, dto.Role);
+            var resp = new RegisterDto
+            {
+                FullName = dto.FullName,
+                Email = dto.Email,
+                Password = dto.Password,
+                Role = dto.Role,
+            };
 
-            return Ok("User registered successfully");
+            return Ok(resp);
         }
 
         [HttpPost("login")]

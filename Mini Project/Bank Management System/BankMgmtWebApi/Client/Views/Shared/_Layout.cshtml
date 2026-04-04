@@ -3,52 +3,113 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Client</title>
+    <title>@ViewData["Title"] - Smart Bank🏦</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Client.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <style>
-    
+    /* Glassmorphism Navbar */
+    .custom-navbar {
+      
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Brand Styling */
+    .navbar-brand {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    /* Nav Links */
+    .nav-link {
+        position: relative;
+        color: #fff !important;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    /* Hover Effect (underline animation) */
+    .nav-hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background: #00d4ff;
+        transition: width 0.3s ease;
+    }
+
+    .nav-hover:hover::after {
+        width: 100%;
+    }
+
+    .nav-hover:hover {
+        color: #00d4ff !important;
+    }
+
+    /* Optional: Navbar shadow on scroll */
+    .custom-navbar.scrolled {
+        background: rgba(0, 0, 0, 0.85);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
 </style>
 @{
     var token = Context.Request.Cookies["jwt"];
 }
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow ">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Client</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">
+                    Smart Bank🏦
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link nav-hover" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+
                         @{
                             if (string.IsNullOrWhiteSpace(token))
                             {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Login">Login</a>
-                            </li>
-
+                                <li class="nav-item">
+                                    <a class="nav-link nav-hover" asp-controller="Auth" asp-action="Login">Login</a>
+                                </li>
                             }
                             else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Logout">Logout</a>
+                                    <a class="nav-link nav-hover" asp-controller="Auth" asp-action="Logout">Logout</a>
                                 </li>
                             }
                         }
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    
+    
     <div class="content-wrapper">
         <main role="main" class="">
             @RenderBody()

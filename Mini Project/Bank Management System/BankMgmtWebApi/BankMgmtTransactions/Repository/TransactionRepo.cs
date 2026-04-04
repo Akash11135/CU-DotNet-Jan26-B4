@@ -22,6 +22,10 @@ namespace BankMgmtTransactions.Repository
         public async Task<Transaction> GetByIdAsync(int Id)
         {
             var transactionById = await _context.Transactions.FirstOrDefaultAsync(a => a.Id == Id);
+            if(transactionById == null)
+            {
+                return null;
+            }
             return transactionById;
         }
 

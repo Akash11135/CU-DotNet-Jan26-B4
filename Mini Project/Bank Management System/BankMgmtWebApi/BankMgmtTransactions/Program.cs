@@ -31,7 +31,7 @@ namespace BankMgmtTransactions
     .AddXmlSerializerFormatters();
 
             builder.Services.AddHttpClient();
-
+            builder.Services.AddHttpContextAccessor();
             builder.Services.AddScoped<TransactionServices>();
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options =>

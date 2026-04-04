@@ -1,139 +1,230 @@
 ﻿@{
-    ViewBag.Title = "Home";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    var token = Context.Request.Cookies["jwt"];
 }
 
 <style>
-    /* HERO SECTION WITH BACKGROUND */
-    .hero {
-        position: relative;
-        background: url('/images/bank-bg.jpg') center/cover no-repeat;
+    /* HERO BACKGROUND */
+    .hero-section {
         height: 90vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
+        color: #fff;
+    }
+    
+    /* GLASS EFFECT */
+    .glass {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 15px;
+        border: 1px solid rgba(255,255,255,0.15);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.2);
     }
 
-        /* DARK OVERLAY */
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.55);
+    /* STATS */
+    .stats-section {
+        margin-top: -100px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .stat-card {
+        padding: 30px;
+        color: #fff;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+        .stat-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: rgba(255,255,255,0.15);
         }
 
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
+        .stat-card h2 {
+            color: #00d4ff;
+        }
 
-    /* BUTTON STYLE */
-    .hero .btn {
-        min-width: 140px;
-        border-radius: 30px;
-    }
-
-    /* SECTION SPACING */
-    .section {
+    /* FEATURES */
+    .features-section {
         padding: 80px 0;
+        color: #fff;
     }
 
-    /* CARDS */
     .feature-card {
-        border: none;
-        border-radius: 15px;
+        padding: 30px;
+        margin: 10px;
         transition: all 0.3s ease;
     }
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            background: rgba(255,255,255,0.15);
         }
 
-    /* LIGHT BACKGROUND SECTION */
-    .bg-light-soft {
-        background-color: #f8f9fc;
+    /* CTA */
+    .cta-section {
+        margin-top: 60px;
+        padding: 60px;
+        text-align: center;
+    }
+
+    /* GLASS BUTTON */
+    .btn-glass {
+        background: rgba(255,255,255,0.1);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+    }
+
+        .btn-glass:hover {
+            background: rgba(255,255,255,0.25);
+            color: #000;
+        }
+
+    /* ANIMATION */
+    .animate-fade {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 1s forwards;
+    }
+
+    .delay-1 {
+        animation-delay: 0.3s;
+    }
+
+    .delay-2 {
+        animation-delay: 0.6s;
+    }
+
+    @@keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 </style>
 
+<div class="containerBox">
+
+
 <!-- HERO -->
-<div class="hero">
-    <div class="hero-content">
-        <h1 class="display-4 fw-bold">Welcome to SmartBank</h1>
-        <p class="lead mb-4">Secure • Fast • Reliable Banking Management System</p>
-
-        <a asp-action="Login" asp-controller="Auth" class="btn btn-light btn-lg mx-2">Login</a>
-        <a asp-action="Register" asp-controller="Auth"  class="btn btn-outline-light btn-lg mx-2">Register</a>
-        <a asp-action="GetAll" asp-controller="Account" class="btn btn-warning btn-lg mx-2">Accounts</a>
-    </div>
-</div>
-
-<!-- FEATURES -->
-<div class="section bg-light-soft">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-3">What We Offer</h2>
-        <p class="text-muted mb-5">
-            A complete banking management solution built with ASP.NET MVC
+<section class="hero-section d-flex align-items-center text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold animate-fade">Welcome to SmartBank</h1>
+        <p class="lead animate-fade delay-1">
+            Secure • Fast • Reliable Banking Experience
         </p>
 
-        <div class="row g-4">
-
-            <!-- Account -->
-            <div class="col-md-4">
-                <div class="card feature-card shadow-sm h-100 p-4">
-                    <h4 class="mt-2">Account Management</h4>
-                    <p class="text-muted">
-                        Create and manage customer accounts, update details,
-                        and maintain secure profiles.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Transaction -->
-            <div class="col-md-4">
-                <div class="card feature-card shadow-sm h-100 p-4">
-                    <h4 class="mt-2">Transaction Management</h4>
-                    <p class="text-muted">
-                        Deposit, withdraw, transfer money and track full
-                        transaction history easily.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Loan -->
-            <div class="col-md-4">
-                <div class="card feature-card shadow-sm h-100 p-4">
-                    <h4 class="mt-2">Loan Management</h4>
-                    <p class="text-muted">
-                        Apply for loans, track approvals and manage repayments
-                        with efficiency.
-                    </p>
-                </div>
-            </div>
-
+        <div class="mt-4 animate-fade delay-2">
+            @if (string.IsNullOrWhiteSpace(token))
+            {
+                <a asp-controller="Auth" asp-action="Login" class="btn btn-glass btn-lg me-2">Login</a>
+                <a asp-controller="Auth" asp-action="Register" class="btn btn-glass btn-lg">Register</a>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="GetAll" class="btn btn-glass btn-lg me-2">Accounts</a>
+                <a asp-controller="Transaction" asp-action="Index" class="btn btn-glass btn-lg">Transactions</a>
+            }
         </div>
     </div>
-</div>
+</section>
+
+<!-- STATS -->
+<section class="container stats-section">
+    <div class="row text-center">
+
+        <div class="col-md-3">
+            <div class="stat-card glass">
+                <h2 class="counter" data-target="12500">0</h2>
+                <p>Total Users</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card glass">
+                <h2 class="counter" data-target="84200">0</h2>
+                <p>Transactions</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card glass">
+                <h2 class="counter" data-target="3200">0</h2>
+                <p>Active Accounts</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card glass">
+                <h2 class="counter" data-target="950">0</h2>
+                <p>Loans Approved</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section text-center">
+    <div class="container">
+        <h2 class="mb-5">What We Offer</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card glass">
+                    <h5>Account Management</h5>
+                    <p>Manage accounts, update details, and secure profiles.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card glass">
+                    <h5>Transaction System</h5>
+                    <p>Deposit, withdraw, and track history easily.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card glass">
+                    <h5>Loan Services</h5>
+                    <p>Apply and track loans with fast approvals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- CTA -->
-<div class="section text-center">
-    <div class="container">
-        <h3 class="fw-bold">Start Managing Your Finances Today</h3>
-        <p class="text-muted mb-4">
-            Join our platform and experience modern banking.
-        </p>
-        <a href="/Account/Register" class="btn btn-primary btn-lg px-4">
-            Get Started
-        </a>
+<section class="cta-section text-white">
+    <div class="container glass p-5">
+        <h2>Start Managing Your Finances Today</h2>
+        <p>Join thousands of happy customers</p>
+        <button class="btn btn-glass btn-lg">Get Started</button>
     </div>
+</section>
 </div>
+<!-- COUNTER SCRIPT -->
+<script>
+    const counters = document.querySelectorAll('.counter');
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; @DateTime.Now.Year SmartBank</p>
-</footer>
+    counters.forEach(counter => {
+        counter.innerText = '0';
+
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const current = +counter.innerText;
+
+            const increment = target / 100;
+
+            if (current < target) {
+                counter.innerText = Math.ceil(current + increment);
+                setTimeout(updateCounter, 20);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCounter();
+    });
+
+</script>

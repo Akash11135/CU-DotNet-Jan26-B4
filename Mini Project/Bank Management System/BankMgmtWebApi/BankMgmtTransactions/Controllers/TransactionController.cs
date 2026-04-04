@@ -21,28 +21,32 @@ namespace BankMgmtTransactions.Controllers
         public async Task<IActionResult> Create(CreateTransactionDto dto)
         {
             var res = await _services.Createtransaction(dto);
-            return Ok(new { transaction = res });
+            return Ok(res);
         }
 
         [HttpGet("getall")]
         public async Task<IActionResult> getAllTransactions()
         {
             var result = await _services.GetAllTransaction();
-            return Ok(new {transactions = result});
+            return Ok(result);
         }
 
         [HttpGet("getbyid/{id}")]
         public async Task<IActionResult> getById(int id)
         {
             var res = await _services.GetTransactionById(id);
-            return Ok(new { transaction = res });
+            if (res == null)
+            {
+                return Ok("No transaction exists.");
+            }
+            return Ok(res);
         }
 
         [HttpGet("getallbyaccount/{id}")]
         public async Task<IActionResult> GetAllTransactionsByAccount(int id)
         {
             var result = await _services.GetTransactionForAccount(id);
-            return Ok(new { transaction = result });
+            return Ok(result);
         }
     }
 }

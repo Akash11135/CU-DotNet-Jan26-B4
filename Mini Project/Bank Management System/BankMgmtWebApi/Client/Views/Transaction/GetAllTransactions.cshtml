@@ -1,0 +1,44 @@
+﻿@model List<Client.DTOs.TransactionByIdDto>
+
+<div class="page-box">
+    <h1 class="page-title">Transaction History</h1>
+    
+    @{
+        if (Model.Count == 0)
+        {
+            <h2>No transaction Made!🚫</h2>
+        }
+        else
+        {
+            <table class=" table table-dark table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th>SNo</th>
+                    <th>Transaction Type</th>
+                    <th>Amount</th>
+                    <th>View Details</th>
+                </tr>
+            </thead>
+                @{
+                    int cnt = 1;
+                }
+            <tbody>
+                @foreach(var transaction in Model)
+                {
+                    <tr>
+                        <td>@cnt</td>
+                        <td>@transaction.TransactionType</td>
+                        <td>Rs @transaction.Amount</td>
+                        <td><a asp-action="Details" asp-asp-controller="Transaction" asp-route-id=@transaction.TransactionId class="btn btn-info">Details</a></td>
+                    </tr>  
+                        cnt++;
+                    }
+            </tbody>
+        </table>
+        }
+    }
+    <div>
+        <a class="btn btn-success" asp-action="Create" asp-controller="Transaction">+ New Transaction</a>
+        <a asp-action="GetAll" class="btn btn-secondary" asp-controller="Account">Back</a>
+    </div>
+</div>
