@@ -1,4 +1,4 @@
-﻿@model List<Vagabond_frontend.DTOs.DestinationDto>
+﻿@model List<Vagabond_frontend.Models.Destination>
 
     <style>
 
@@ -19,6 +19,8 @@
 
 
 <div class="container mt-4">
+    <a class="btn btn-secondary p-1 m-2" asp-action="Create" asp-controller="Destination">Create</a>
+
     <div class="card shadow-lg border-0 rounded-4">
     
         <div class="card-header bg-dark text-white rounded-top-4 d-flex justify-content-between align-items-center">
@@ -39,6 +41,7 @@
                             <th>Description</th>
                             <th>Rating</th>
                             <th>Last Visited</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
 
@@ -78,6 +81,10 @@
                                     <small class="text-muted">
                                         @dest.LastVisited.ToString("dd MMM yyyy")
                                     </small>
+                                </td>
+                                <td>
+                                    <a class="btn btn-danger p-1 ml-1" asp-action="Delete" asp-router-id=@dest.Id asp-controller="Destination">Delete</a>
+                                    <a class="btn btn-success p-1 ml-1" asp-action="Edit" asp-router-id=@dest.Id asp-controller="Destination">Edit</a>
                                 </td>
                             </tr>
 

@@ -1,6 +1,6 @@
 using System.Text.Json;
 using Vagabond_frontend.DTOs;
-
+using Vagabond_frontend.Models;
 namespace Vagabond_frontend.Services
 {
     public class DestinationService
@@ -12,13 +12,13 @@ namespace Vagabond_frontend.Services
             _http = http;
         }
 
-        public async Task<List<DestinationDto>> GetAll()
+        public async Task<List<Destination>> GetAll()
         {
-            var resp = await _http.GetFromJsonAsync <List<DestinationDto>>("http://localhost:5113/api/destination");
+            var resp = await _http.GetFromJsonAsync <List<Destination>>("http://localhost:5113/api/destination");
 
             if(resp == null)
             {
-                return new List<DestinationDto>();
+                return new List<Destination>();
             }
             return resp;
         }

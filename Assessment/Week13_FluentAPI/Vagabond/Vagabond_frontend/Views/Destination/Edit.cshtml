@@ -1,0 +1,52 @@
+﻿@model Vagabond_frontend.DTOs.DestinationDto
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-4">
+
+        <div class="card-header bg-warning text-dark rounded-top-4">
+            <h4 class="mb-0">✏️ Edit Destination</h4>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="Edit">
+
+              
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label class="form-label">Country</label>
+                        <input asp-for="Country" class="form-control" required />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">City Name</label>
+                        <input asp-for="CityName" class="form-control" required />
+                    </div>
+
+                    <div class="col-md-12">
+                        <label class="form-label">Description</label>
+                        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Rating</label>
+                        <input asp-for="Rating" type="number" class="form-control" min="1" max="5" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Last Visited</label>
+                        <input asp-for="LastVisited" type="date" class="form-control" />
+                    </div>
+
+                </div>
+
+                <div class="mt-4 d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">⬅ Back</a>
+                    <button type="submit" class="btn btn-warning">Update</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
