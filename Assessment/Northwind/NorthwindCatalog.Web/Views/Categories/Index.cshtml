@@ -1,0 +1,60 @@
+﻿@model List<NorthwindCatalog.Services.DTOs.CategoryDto>
+
+<style>
+    .card-custom {
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        background: #fff;
+    }
+
+    .card-custom:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .card-img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .btn-modern {
+        border-radius: 20px;
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+    body {
+        background: #f7f7f7;
+    }
+</style>
+
+<div class="container mt-4">
+    <h2 class="mb-4 fw-bold">Categories</h2>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom">
+                  
+                    <!-- Image -->
+                    <img  src=@item.ImageUrl class="card-img" />
+
+                    <!-- Content -->
+                    <div class="p-3">
+                        <h5 class="fw-semibold">@item.CategoryName</h5>
+                          <p>Img : @item.ImageUrl</p>
+                        <a href="/Products/ByCategory/@item.CategoryId"
+                           class="btn btn-dark btn-modern mt-2">
+                            View Products
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+</div>
