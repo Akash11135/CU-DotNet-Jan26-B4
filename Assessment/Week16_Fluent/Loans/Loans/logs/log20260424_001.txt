@@ -1,0 +1,109 @@
+2026-04-24 14:35:29.374 +05:30 [INF] Now listening on: https://localhost:7095
+2026-04-24 14:35:29.400 +05:30 [INF] Now listening on: http://localhost:5062
+2026-04-24 14:35:29.451 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 14:35:29.453 +05:30 [INF] Hosting environment: Development
+2026-04-24 14:35:29.454 +05:30 [INF] Content root path: C:\Users\shrey\source\repos\Loans\Loans
+2026-04-24 14:35:29.619 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2026-04-24 14:35:29.713 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2026-04-24 14:35:29.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 102.7869ms
+2026-04-24 14:35:29.723 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 9.5622ms
+2026-04-24 14:35:29.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2026-04-24 14:35:29.736 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2026-04-24 14:35:29.742 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 14:35:29.744 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 19.6934ms
+2026-04-24 14:35:29.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 14915 application/javascript; charset=utf-8 26.262ms
+2026-04-24 14:35:29.784 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2026-04-24 14:35:29.784 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 14:35:29.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.6537ms
+2026-04-24 14:35:29.825 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 14915 application/javascript; charset=utf-8 40.5932ms
+2026-04-24 14:35:29.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 14:35:29.829 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.5877ms
+2026-04-24 14:35:29.831 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2026-04-24 14:35:29.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 14915 application/javascript; charset=utf-8 17.4285ms
+2026-04-24 14:35:29.855 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.1613ms
+2026-04-24 14:35:29.889 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2026-04-24 14:35:29.897 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.9298ms
+2026-04-24 14:35:29.915 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2026-04-24 14:35:29.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.5814ms
+2026-04-24 14:35:29.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2026-04-24 14:35:29.931 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.4862ms
+2026-04-24 14:35:34.607 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyPremium' on entity type 'LoanApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-24 14:35:34.651 +05:30 [WRN] No store type was specified for the decimal property 'TotalPayableAmount' on entity type 'LoanApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-24 14:35:34.906 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-24 14:35:34.921 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-24 14:35:34.923 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-24 14:35:34.923 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-24 14:35:34.942 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-24 14:35:34.949 +05:30 [INF] Applying migration '20260424090529_AddApplicantName'.
+2026-04-24 14:35:34.984 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [LoanApplications] ADD [ApplicantName] nvarchar(max) NOT NULL DEFAULT N'';
+2026-04-24 14:35:34.988 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260424090529_AddApplicantName', N'8.0.0');
+2026-04-24 14:35:35.029 +05:30 [INF] Now listening on: https://localhost:7095
+2026-04-24 14:35:35.056 +05:30 [INF] Now listening on: http://localhost:5062
+2026-04-24 14:35:35.108 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 14:35:35.111 +05:30 [INF] Hosting environment: Development
+2026-04-24 14:35:35.113 +05:30 [INF] Content root path: C:\Users\shrey\source\repos\Loans\Loans
+2026-04-24 14:35:35.522 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2026-04-24 14:35:35.658 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2026-04-24 14:35:35.667 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 145.6485ms
+2026-04-24 14:35:35.671 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 13.0143ms
+2026-04-24 14:35:35.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2026-04-24 14:35:35.702 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 28.47ms
+2026-04-24 14:35:35.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2026-04-24 14:35:35.742 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 14:35:35.803 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 14915 application/javascript; charset=utf-8 61.4612ms
+2026-04-24 14:35:35.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 14:35:35.813 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2026-04-24 14:35:35.813 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2026-04-24 14:35:35.814 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.8997ms
+2026-04-24 14:35:35.818 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 14915 application/javascript; charset=utf-8 14.9788ms
+2026-04-24 14:35:35.821 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 14:35:35.835 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8162ms
+2026-04-24 14:35:35.835 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8265ms
+2026-04-24 14:35:35.850 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 14915 application/javascript; charset=utf-8 28.7349ms
+2026-04-24 14:35:35.885 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2026-04-24 14:35:35.900 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.5643ms
+2026-04-24 14:35:35.903 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2026-04-24 14:35:35.910 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.3433ms
+2026-04-24 14:35:35.912 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2026-04-24 14:35:35.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.2299ms
+2026-04-24 14:35:39.829 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2026-04-24 14:35:39.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 8.3716ms
+2026-04-24 14:35:39.850 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 14:35:39.850 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2026-04-24 14:35:39.856 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 14915 application/javascript; charset=utf-8 6.2474ms
+2026-04-24 14:35:39.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.7599ms
+2026-04-24 14:35:39.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2026-04-24 14:35:39.918 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.0029ms
+2026-04-24 14:35:57.894 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Loan - application/json 98
+2026-04-24 14:35:57.917 +05:30 [INF] Executing endpoint 'Loans.Controllers.LoanController.Create (Loans)'
+2026-04-24 14:35:57.995 +05:30 [INF] Route matched with {action = "Create", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Loans.DTOs.LoanRequestDto) on controller Loans.Controllers.LoanController (Loans).
+2026-04-24 14:35:58.236 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-24 14:35:58.721 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyPremium' on entity type 'LoanApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-24 14:35:58.724 +05:30 [WRN] No store type was specified for the decimal property 'TotalPayableAmount' on entity type 'LoanApplication'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-04-24 14:35:59.468 +05:30 [INF] Executed DbCommand (89ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (Size = 20), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([ApplicantName], [CreatedDate], [InterestRate], [LoanAmount], [MonthlyPremium], [Status], [TenureMonths], [TotalPayableAmount], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2026-04-24 14:35:59.553 +05:30 [INF] Executing OkObjectResult, writing value of type 'Loans.Common.ApiResponse`1[[Loans.DTOs.LoanResponseDto, Loans, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 14:35:59.575 +05:30 [INF] Executed action Loans.Controllers.LoanController.Create (Loans) in 1567.1609ms
+2026-04-24 14:35:59.577 +05:30 [INF] Executed endpoint 'Loans.Controllers.LoanController.Create (Loans)'
+2026-04-24 14:35:59.585 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Loan - 200 null application/json; charset=utf-8 1691.6368ms
+2026-04-24 14:36:46.805 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Loan - application/json 94
+2026-04-24 14:36:46.813 +05:30 [INF] Executing endpoint 'Loans.Controllers.LoanController.Create (Loans)'
+2026-04-24 14:36:46.816 +05:30 [INF] Route matched with {action = "Create", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Loans.DTOs.LoanRequestDto) on controller Loans.Controllers.LoanController (Loans).
+2026-04-24 14:36:46.843 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-04-24 14:36:46.870 +05:30 [INF] Executed action Loans.Controllers.LoanController.Create (Loans) in 52.2227ms
+2026-04-24 14:36:46.893 +05:30 [INF] Executed endpoint 'Loans.Controllers.LoanController.Create (Loans)'
+2026-04-24 14:36:46.894 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Loan - 400 null application/problem+json; charset=utf-8 89.5235ms
